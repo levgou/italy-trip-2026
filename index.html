@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Italy Road Trip 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/white.min.css">
+<style>
+  :root {
+    --green: #006341;
+    --red: #C8102E;
+    --cream: #F0EBE3;
+    --warm-gray: #E8E2D8;
+    --dark: #2C2C2C;
+    --gold: #C5A258;
+  }
+
+  .reveal {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: clamp(16px, 2.8vw, 32px);
+    color: var(--dark);
+  }
+
+  .reveal .slides { text-align: left; }
+
+  .reveal h1, .reveal h2, .reveal h3 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    color: var(--dark);
+    text-transform: none;
+    letter-spacing: 0.01em;
+  }
+
+  .reveal h1 { font-size: 1.8em; margin: 0 0 5px 0; }
+  .reveal h2 { font-size: 1.3em; margin: 0 0 4px 0; }
+  .reveal h3 { font-size: 0.95em; color: var(--green); margin: 6px 0 4px 0; }
+
+  /* Italian tricolore accent bar */
+  .tricolore {
+    height: 3px;
+    background: linear-gradient(90deg, var(--green) 33%, white 33%, white 66%, var(--red) 66%);
+    margin: 5px 0 8px 0;
+    border-radius: 2px;
+  }
+
+  /* Hero slides with background images */
+  .hero-slide {
+    text-align: center !important;
+  }
+  .hero-slide h1, .hero-slide h2, .hero-slide p {
+    color: white !important;
+    text-shadow: 1px 2px 6px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.5);
+  }
+  /* Dark overlay for hero sections so text is always readable */
+  section[data-background-image]::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 0;
+  }
+  .hero-slide .day-badge {
+    display: inline-block;
+    background: var(--red);
+    color: white;
+    padding: 8px 24px;
+    border-radius: 30px;
+    font-size: 0.7em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-shadow: none;
+    margin-bottom: 10px;
+  }
+
+  /* Content cards */
+  .card {
+    background: white;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin: 6px 0;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    border-left: 3px solid var(--green);
+  }
+  .card.red { border-left-color: var(--red); }
+  .card.gold { border-left-color: var(--gold); }
+
+  /* Place entries */
+  .place {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin: 5px 0;
+    padding: 7px 10px;
+    background: var(--warm-gray);
+    border-radius: 8px;
+  }
+  .place-icon {
+    font-size: 1.2em;
+    flex-shrink: 0;
+    width: 30px;
+    text-align: center;
+  }
+  .place-info { flex: 1; }
+  .place-name {
+    font-weight: bold;
+    font-size: 0.85em;
+    color: var(--dark);
+    margin-bottom: 2px;
+  }
+  .place-detail {
+    font-size: 0.78em;
+    color: #666;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.4;
+  }
+  .place-price {
+    display: inline-block;
+    background: var(--green);
+    color: white;
+    padding: 1px 7px;
+    border-radius: 10px;
+    font-size: 0.85em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+  }
+  .place-tag {
+    display: inline-block;
+    background: var(--gold);
+    color: white;
+    padding: 1px 6px;
+    border-radius: 8px;
+    font-size: 0.8em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    margin-left: 3px;
+  }
+
+  /* Drive info box */
+  .drive-box {
+    background: linear-gradient(135deg, var(--green), #00845a);
+    color: white;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin: 6px 0;
+    font-family: 'Nunito', sans-serif;
+  }
+  .drive-box h3 { color: white !important; margin: 0 0 6px 0; font-size: 0.95em !important; }
+  .drive-stats {
+    display: flex;
+    gap: 24px;
+    margin-top: 6px;
+  }
+  .drive-stat {
+    text-align: center;
+  }
+  .drive-stat .num {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+  }
+  .drive-stat .label {
+    font-size: 0.65em;
+    opacity: 0.85;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* Alert box */
+  .alert-box {
+    background: #FFF3E0;
+    border-left: 3px solid #FF9800;
+    border-radius: 6px;
+    padding: 7px 12px;
+    margin: 5px 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8em;
+  }
+  .alert-box.red-alert {
+    background: #FFEBEE;
+    border-left-color: var(--red);
+  }
+
+  /* Image with caption */
+  .img-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    margin: 5px 0;
+  }
+  .img-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+  }
+  .img-card .caption {
+    padding: 8px 10px;
+    background: white;
+    font-size: 0.7em;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  /* Grid layout */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    align-items: start;
+  }
+
+  /* Schedule table */
+  .schedule {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.75em;
+    border-collapse: collapse;
+  }
+  .schedule td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+  }
+  .schedule td:first-child {
+    font-weight: bold;
+    color: var(--green);
+    white-space: nowrap;
+    width: 55px;
+  }
+
+  /* Navigation hint */
+  .nav-hint {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.65em;
+    color: #999;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .nav-hint kbd {
+    background: #eee;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    border: 1px solid #ddd;
+  }
+
+  /* Food image row */
+  .food-row {
+    display: flex;
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .food-item {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: white;
+  }
+  .food-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+  }
+  .food-item .food-label {
+    padding: 6px 10px;
+    font-size: 0.78em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: var(--dark);
+  }
+
+  /* Links */
+  .reveal a { color: var(--green); text-decoration: underline; }
+
+  /* Smaller text helper */
+  .small { font-size: 0.85em; }
+  .tiny { font-size: 0.75em; font-family: 'Nunito', sans-serif; }
+
+  /* Override reveal defaults */
+  .reveal .slide-background { background-color: var(--cream); }
+  .reveal .slides { width: 100% !important; height: 100% !important; }
+  .reveal .slides > section,
+  .reveal .slides > section > section {
+    padding: 25px 35px;
+    box-sizing: border-box;
+    width: 100% !important;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+  .reveal section.hero-slide { padding: 0; }
+
+  /* Image modal */
+  .img-modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-modal.active { display: flex; }
+  .img-modal img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.5);
+  }
+
+  /* Make images clickable */
+  .img-card img, .food-item img, .thumb-row img {
+    cursor: zoom-in;
+  }
+
+  /* Thumbnail row for multi-image places */
+  .thumb-row {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 4px;
+  }
+  .thumb-row img {
+    flex: 1;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    min-width: 0;
+  }
+
+  /* Responsive for phone */
+  @media (max-width: 768px) {
+    .grid-2 { grid-template-columns: 1fr; }
+    .grid-3 { grid-template-columns: 1fr 1fr; }
+    .drive-stats { flex-wrap: wrap; }
+    .food-row { flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+<!-- ==================== TITLE SLIDE ==================== -->
+<section data-background-image="img/hero-maggiore.jpg" data-background-opacity="0.85" data-background-color="#2C2C2C">
+  <div class="hero-slide" style="text-align:center">
+    <p style="font-size:3em; margin:0; text-shadow:none;">🇮🇹</p>
+    <h1 style="color:white; margin:10px 0;">Italy Road Trip</h1>
+    <div class="tricolore" style="width:200px; margin:10px auto;"></div>
+    <p style="color:rgba(255,255,255,0.9); font-family:sans-serif; font-size:0.7em;">
+      May 31 - Jun 8, 2026 &nbsp;|&nbsp; ~960 km &nbsp;|&nbsp; 8 days
+    </p>
+    <p style="color:rgba(255,255,255,0.7); font-family:sans-serif; font-size:0.55em; margin-top:30px;">
+      Milan &rarr; Lake Maggiore &rarr; Lake Como &rarr; Lake Garda &rarr; Trentino &rarr; Dolomites &rarr; Venice &rarr; Milan
+    </p>
+    <div class="nav-hint" style="color:rgba(255,255,255,0.9); margin-top:40px;">
+      <kbd style="background:rgba(255,255,255,0.25); border-color:rgba(255,255,255,0.4); color:white;">&rarr;</kbd> next day &nbsp;&nbsp; <kbd style="background:rgba(255,255,255,0.25); border-color:rgba(255,255,255,0.4); color:white;">&darr;</kbd> details &nbsp;&nbsp; <kbd style="background:rgba(255,255,255,0.25); border-color:rgba(255,255,255,0.4); color:white;">O</kbd> overview &nbsp;&nbsp; swipe on mobile
+    </div>
+  </div>
+</section>
+
+<!-- ==================== HOW TO USE ==================== -->
+<section data-background-color="#FFF8F0">
+  <h2>How This Deck Works</h2>
+  <div class="tricolore"></div>
+  <div class="grid-2">
+    <div>
+      <div class="card">
+        <h3>Navigation</h3>
+        <p class="small" style="font-family:sans-serif;">
+          <strong>&rarr; Right:</strong> Next day<br>
+          <strong>&darr; Down:</strong> Details for current day<br>
+          <strong>O:</strong> Bird's-eye overview of all slides<br>
+          <strong>Swipe:</strong> Works on phone too
+        </p>
+      </div>
+      <div class="card">
+        <h3>Icons Legend</h3>
+        <p class="tiny">
+          🍝 Trattoria &nbsp; 🍷 Osteria &nbsp; 🦑 Bacaro<br>
+          🍽 Ristorante &nbsp; 🏔 Rifugio &nbsp; 🍺 Gasthaus<br>
+          🍦 Gelateria &nbsp; ☕ Caffe &nbsp; 🌙 Nightlife<br>
+          🌾 Agriturismo &nbsp; 🛏 B&B &nbsp; 🐄 Maso &nbsp; 🏨 Hotel<br>
+          🥾 Hike &nbsp; 🛣 Scenic Drive &nbsp; 🏖 Swim &nbsp; ☂ Rain Plan
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="card red">
+        <h3 style="color:var(--red)">Each Day Includes</h3>
+        <p class="small" style="font-family:sans-serif;">
+          <strong>Slide 1:</strong> Hero photo + day overview<br>
+          <strong>Slide 2:</strong> Drive details + schedule<br>
+          <strong>Slide 3:</strong> Sights & activities (with images)<br>
+          <strong>Slide 4:</strong> Where to eat (with local dishes)<br>
+          <strong>Slide 5:</strong> Gelato, sleep, tips
+        </p>
+      </div>
+      <div class="card gold">
+        <h3 style="color:var(--gold)">Price Tags</h3>
+        <p class="tiny">
+          Every place is annotated with:<br>
+          <span class="place-price">~80-120 EUR</span> expected price<br>
+          <span class="place-tag">MUST TRY</span> special tags<br>
+          Links to Google Maps for easy navigation
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== BOOK AHEAD ==================== -->
+<section data-background-color="#FFF8F0">
+  <h2>⚠️ Book Ahead</h2>
+  <div class="tricolore"></div>
+
+  <div class="grid-2">
+    <div>
+      <p class="tiny" style="color:#999; margin-bottom:8px;">Do these BEFORE the trip - they sell out</p>
+
+      <div class="alert-box red-alert">
+        <strong>🏝 Isola del Garda - Guided Tour</strong> (Day 3, Tue)<br>
+        <span class="tiny">Book at <a href="https://www.isoladelgarda.com/en/guided-tours" target="_blank">isoladelgarda.com</a> &nbsp;|&nbsp; <span class="place-price">39-49 EUR/pp</span><br>Closed Mondays! Villa tour + wine + olive oil tasting</span>
+      </div>
+
+      <div class="alert-box">
+        <strong>🅿️ Venice Parking</strong> (Day 7)<br>
+        <span class="tiny">Pre-book at <a href="https://parclick.it/parcheggio-venezia" target="_blank">parclick.it</a> &nbsp;|&nbsp; <span class="place-price">5-15 EUR/day</span> Mestre + train</span>
+      </div>
+
+      <div class="alert-box">
+        <strong>⛴ Borromean Islands Ferry</strong> (Day 1)<br>
+        <span class="tiny"><a href="https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-maggiore/" target="_blank">navigazionelaghi.it</a> &nbsp;|&nbsp; <span class="place-price">~15-20 EUR/pp</span> &nbsp;|&nbsp; Every 30 min</span>
+      </div>
+
+      <div class="card" style="background:#E8F5E9; border-left-color:var(--green);">
+        <strong>✅ Pragser Wildsee</strong> - <span class="tiny">End of May = road OPEN. No reservation needed</span>
+      </div>
+    </div>
+    <div>
+      <div class="img-card">
+        <img src="img/isola-garda.jpg" alt="Isola del Garda">
+        <div class="caption"><strong>Isola del Garda</strong> - Book this! Neo-Gothic villa on a private island</div>
+      </div>
+      <div class="img-card">
+        <img src="img/pragser.jpg" alt="Pragser Wildsee">
+        <div class="caption"><strong>Lago di Braies</strong> - No booking needed end of May!</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== DAY 1: STRESA ==================== -->
+<!-- Hero -->
+<section>
+<section data-background-image="img/hero-maggiore.jpg" data-background-opacity="0.85" data-background-color="#2C2C2C">
+  <div class="hero-slide">
+    <span class="day-badge">DAY 1 &bull; SUNDAY MAY 31</span>
+    <h1 style="color:white">Lake Maggiore</h1>
+    <p style="color:rgba(255,255,255,0.9); font-size:0.9em;">Stresa & Borromean Islands</p>
+    <div class="tricolore" style="width:150px; margin:15px auto;"></div>
+    <div style="display:flex; justify-content:center; gap:30px; margin-top:20px;">
+      <div class="drive-stat">
+        <div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">1h</div>
+        <div class="label" style="color:rgba(255,255,255,0.7);">driving</div>
+      </div>
+      <div class="drive-stat">
+        <div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">60 km</div>
+        <div class="label" style="color:rgba(255,255,255,0.7);">MXP &rarr; Stresa</div>
+      </div>
+      <div class="drive-stat">
+        <div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">~5h</div>
+        <div class="label" style="color:rgba(255,255,255,0.7);">free roam</div>
+      </div>
+    </div>
+    <p class="nav-hint" style="color:rgba(255,255,255,0.4);">&darr; scroll down for details</p>
+  </div>
+</section>
+
+<!-- Day 1: Drive + Schedule -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 1 &mdash; Drive & Schedule</h2>
+  <div class="tricolore"></div>
+
+  <div class="grid-2">
+    <div>
+      <div class="drive-box">
+        <h3>🚗 MXP Airport &rarr; Stresa</h3>
+        <div class="drive-stats">
+          <div class="drive-stat"><div class="num">60</div><div class="label">km</div></div>
+          <div class="drive-stat"><div class="num">1h</div><div class="label">drive</div></div>
+          <div class="drive-stat"><div class="num">12:30</div><div class="label">depart</div></div>
+        </div>
+        <p style="font-size:0.75em; margin-top:10px; opacity:0.9;">
+          🛣 <strong>Scenic:</strong> Autostrada to Arona, then <strong>SS33 lake shore</strong> for last 20 km
+        </p>
+        <p class="tiny" style="opacity:0.7;">
+          <a href="https://www.google.com/maps/dir/Milan+Malpensa+Airport/Stresa" target="_blank" style="color:white;">Open in Google Maps &rarr;</a>
+        </p>
+      </div>
+
+      <table class="schedule">
+        <tr><td>13:30</td><td>Arrive Stresa, drop bags, quick lunch</td></tr>
+        <tr><td>15:00</td><td>⛴ <strong>Borromean Islands</strong> by ferry</td></tr>
+        <tr><td>18:00</td><td>🚶 Lungolago evening passeggiata</td></tr>
+        <tr><td>20:00</td><td>🍷 Dinner</td></tr>
+      </table>
+    </div>
+    <div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/ss33-road-1.jpg" alt="SS33 road">
+          <img src="img/ss33-road-2.jpg" alt="SS33 lake views">
+        </div>
+        <div class="caption">🛣 <strong>SS33 lake shore road</strong> - your first views of Lago Maggiore from the car</div>
+      </div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/stresa-pano.jpg" alt="Stresa panorama">
+        </div>
+        <div class="caption">🚶 <strong>Lungolago Stresa</strong> - evening passeggiata along the waterfront</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 1: Sights -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 1 &mdash; Borromean Islands</h2>
+  <div class="tricolore"></div>
+
+  <div class="grid-2">
+    <div>
+      <div class="img-card">
+        <img src="img/isola-bella.jpg" alt="Isola Bella">
+        <div class="caption"><strong>Isola Bella</strong> - Baroque palace + terraced gardens. The showstopper. ~1.5h visit</div>
+      </div>
+    </div>
+    <div>
+      <div class="img-card">
+        <img src="img/isola-pescatori.jpg" alt="Isola dei Pescatori">
+        <div class="caption"><strong>Isola dei Pescatori</strong> - Tiny fishing village. Eat lunch here! The whole island is a restaurant</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert-box" style="margin-top:12px;">
+    <strong>⛴ Ferry Info:</strong> From Stresa piazzale lido, every 30 min. <span class="place-price">~15-20 EUR/pp RT</span><br>
+    <span class="tiny"><a href="https://www.google.com/maps/place/Isola+Bella" target="_blank">Isola Bella on Maps</a> &nbsp;|&nbsp; <a href="https://www.google.com/maps/place/Isola+dei+Pescatori" target="_blank">Isola dei Pescatori on Maps</a></span>
+  </div>
+
+  <div class="grid-2" style="margin-top:8px;">
+    <div class="card" style="padding:8px 12px;">
+      <span class="tiny">🏖 <strong>Quick swim:</strong> Spiaggia Lido di Stresa - pebbly beach in town. Water ~18-19C end of May</span>
+    </div>
+    <div class="img-card">
+      <div class="thumb-row">
+        <img src="img/angera-castle-1.jpg" alt="Angera Castle">
+        <img src="img/angera-castle-2.jpg" alt="Angera Castle 2">
+      </div>
+      <div class="caption">☂ <strong>Rain backup:</strong> <a href="https://www.google.com/maps/place/Rocca+di+Angera" target="_blank">Borromeo Castle in Angera</a> (30 min) - medieval castle, lake views from tower</div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 1: Food -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 1 &mdash; Where to Eat</h2>
+  <div class="tricolore"></div>
+
+  <div class="grid-2">
+    <div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/rampolina-terrace.jpg" alt="La Rampolina terrace">
+          <img src="img/rampolina-food1.jpg" alt="Rampolina dish">
+          <img src="img/rampolina-food2.jpg" alt="Rampolina dish 2">
+        </div>
+        <div class="caption">🍷 <strong>La Rampolina</strong> <span class="place-price">~25-35 EUR/pp</span> <span class="place-tag">TOP PICK</span>
+          <br>Terrace overlooking lake + Borromean Islands. Locals' favorite.
+          <br><a href="https://www.google.com/maps/search/La+Rampolina+Stresa" target="_blank">Maps</a></div>
+      </div>
+    </div>
+    <div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/lo-stornello-interior.jpg" alt="Lo Stornello">
+        </div>
+        <div class="caption">🍝 <strong>Trattoria Lo Stornello</strong> <span class="place-price">~20-30 EUR/pp</span>
+          <br>Simple family spot, centro storico. Order: pesce persico, risotto, stufato.
+          <br><a href="https://www.google.com/maps/search/Trattoria+Lo+Stornello+Stresa" target="_blank">Maps</a></div>
+      </div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/osteria-amici-1.jpg" alt="Osteria degli Amici">
+          <img src="img/osteria-amici-2.jpg" alt="Osteria degli Amici 2">
+        </div>
+        <div class="caption">🍷 <strong>Osteria degli Amici</strong> <span class="place-price">~20-30 EUR/pp</span>
+          <br>Homey, menu changes daily. Zuppe, spezzatini, paste fresche.
+          <br><a href="https://www.google.com/maps/search/Osteria+degli+Amici+Stresa" target="_blank">Maps</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 1: Gelato, Sleep, Tips -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 1 &mdash; Gelato, Sleep & Tips</h2>
+  <div class="tricolore"></div>
+
+  <div class="grid-2">
+    <div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/angolo-gelato-1.jpg" alt="Angolo del Gelato">
+          <img src="img/angolo-gelato-2.jpg" alt="Angolo del Gelato 2">
+          <img src="img/angolo-gelato-3.jpg" alt="Angolo del Gelato 3">
+        </div>
+        <div class="caption">🍦 <strong>L'Angolo del Gelato</strong> - Centro Stresa. Try <strong>caramello salato</strong>. <span class="place-price">~3-5 EUR</span>
+          <br><a href="https://www.google.com/maps/search/Angolo+del+Gelato+Stresa" target="_blank">Maps</a></div>
+      </div>
+
+      <h3>🌙 Evening</h3>
+      <p class="tiny">Stresa is quiet at night. Lungolago passeggiata with a drink. Aperitivo at your hotel terrace - sunset over the islands.</p>
+    </div>
+    <div>
+      <h3>🛏 Where to Sleep</h3>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/dafne-1.jpg" alt="Dafne">
+          <img src="img/dafne-2.jpg" alt="Dafne 2">
+        </div>
+        <div class="caption">🌾 <strong>Agriturismo Nel Giardino di Dafne</strong> <span class="place-price">~100-130 EUR</span>
+          <br>Breakfast basket at 8am: local milk, yogurt, fresh pastries.
+          <br><a href="https://www.google.com/maps/search/Agriturismo+Giardino+Dafne+Stresa" target="_blank">Maps</a></div>
+      </div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/la-palma-1.jpg" alt="La Palma">
+          <img src="img/la-palma-2.jpg" alt="La Palma 2">
+        </div>
+        <div class="caption">🏨 <strong>Hotel La Palma</strong> <span class="place-price">~120-150 EUR</span>
+          <br>4-star on lungolago. Rooftop terrace sunset panorama.
+          <br><a href="https://www.google.com/maps/search/Hotel+La+Palma+Stresa" target="_blank">Maps</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- ==================== DAY 2: COMO ==================== -->
+<!-- Hero -->
+<section>
+<section data-background-image="img/como-lake.jpg" data-background-opacity="0.5" data-background-color="#2C2C2C">
+  <div class="hero-slide">
+    <span class="day-badge">DAY 2 &bull; MONDAY JUN 1</span>
+    <h1 style="color:white">Lake Como</h1>
+    <p style="color:rgba(255,255,255,0.9); font-size:0.9em;">Brunate, Faro Voltiano & Greenway</p>
+    <div class="tricolore" style="width:150px; margin:15px auto;"></div>
+    <div style="display:flex; justify-content:center; gap:30px; margin-top:20px;">
+      <div class="drive-stat">
+        <div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">1.5h</div>
+        <div class="label" style="color:rgba(255,255,255,0.7);">driving</div>
+      </div>
+      <div class="drive-stat">
+        <div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">60 km</div>
+        <div class="label" style="color:rgba(255,255,255,0.7);">Stresa &rarr; Como</div>
+      </div>
+      <div class="drive-stat">
+        <div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">~7h</div>
+        <div class="label" style="color:rgba(255,255,255,0.7);">free roam</div>
+      </div>
+    </div>
+    <p class="nav-hint" style="color:rgba(255,255,255,0.4);">&darr; scroll down for details</p>
+  </div>
+</section>
+
+<!-- Day 2: Drive + Schedule -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 2 &mdash; Drive & Schedule</h2>
+  <div class="tricolore"></div>
+
+  <div class="grid-2">
+    <div>
+      <div class="drive-box">
+        <h3>🚗 Stresa &rarr; Sasso del Ferro &rarr; Como</h3>
+        <div class="drive-stats">
+          <div class="drive-stat"><div class="num">60</div><div class="label">km</div></div>
+          <div class="drive-stat"><div class="num">1.5h</div><div class="label">drive</div></div>
+          <div class="drive-stat"><div class="num">10:30</div><div class="label">depart</div></div>
+        </div>
+        <p style="font-size:0.75em; margin-top:10px; opacity:0.9;">
+          🛣 <strong>Scenic:</strong> SS34 lake shore. Option: <strong>Laveno-Intra car ferry</strong> (~20 min, ~15 EUR)
+        </p>
+        <p class="tiny" style="opacity:0.7;">
+          <a href="https://www.google.com/maps/dir/Stresa/Como" target="_blank" style="color:white;">Open in Google Maps &rarr;</a>
+        </p>
+      </div>
+
+      <table class="schedule">
+        <tr><td>09:00</td><td>🚡 <strong>Sasso del Ferro</strong> - cable car, panoramic peak</td></tr>
+        <tr><td>10:30</td><td>🚗 Drive to Como (SS34 scenic)</td></tr>
+        <tr><td>12:00</td><td>🍝 Lunch in Brunate or Como</td></tr>
+        <tr><td>13:30</td><td>🚞 <strong>Brunate</strong> funicular + Faro Voltiano</td></tr>
+        <tr><td>16:00</td><td>🚶 <strong>Greenway</strong> Colonno-Sala Comacina</td></tr>
+        <tr><td>20:00</td><td>🍷 Dinner in Como</td></tr>
+      </table>
+    </div>
+    <div>
+      <div class="img-card">
+        <img src="img/varenna-sunset.jpg" alt="Lake Maggiore">
+        <div class="caption">🌅 <strong>SS34 lake shore drive</strong> - Option: Laveno-Intra car ferry across the lake <span class="place-price">~15 EUR</span></div>
+      </div>
+      <div class="img-card">
+        <img src="img/brunate-view.jpg" alt="View from Brunate">
+        <div class="caption">🚡 <strong>View from Brunate</strong> - panoramic views over Lake Como and the Alps</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 2: Sights -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 2 &mdash; Sights & Activities</h2>
+  <div class="tricolore"></div>
+
+  <div class="grid-2">
+    <div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/brunate-funicular-new-1.jpg" alt="Brunate Funicular">
+          <img src="img/brunate-funicular-new-2.jpg" alt="Brunate Funicular 2">
+        </div>
+        <div class="caption">
+          <strong>Brunate Funicular</strong> - 7 min ride from Como center up to 715m. Views are insane.
+          <span class="place-price">~6 EUR RT</span><br>
+          <span class="tiny"><a href="https://www.google.com/maps/search/Funicolare+Como+Brunate" target="_blank">Maps</a></span>
+        </div>
+      </div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/faro-voltiano-new-1.jpg" alt="Faro Voltiano">
+          <img src="img/faro-voltiano-new-2.jpg" alt="Faro Voltiano view">
+        </div>
+        <div class="caption">
+          <strong>Faro Voltiano</strong> - Lighthouse at top of Brunate. 30 min easy walk from funicular. Panoramic views over entire lake.
+          <span class="place-price">Free</span><br>
+          <span class="tiny"><a href="https://www.google.com/maps/place/Faro+Voltiano" target="_blank">Maps</a></span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="img-card">
+        <img src="img/greenway-lake-como.jpg" alt="Greenway Como">
+        <div class="caption">
+          <strong>Greenway del Lago di Como</strong> - 10 km scenic path, western shore. Do Colonno &rarr; Sala Comacina section (3-5 km, 1-2h).
+          <span class="place-price">Free</span><br>
+          <span class="tiny"><a href="https://www.google.com/maps/search/Greenway+Lago+Como" target="_blank">Maps</a></span>
+        </div>
+      </div>
+      <div class="img-card" style="margin-top:8px;">
+        <div class="thumb-row">
+          <img src="img/econoleggio-1.jpg" alt="E-bike rental">
+          <img src="img/econoleggio-2.jpg" alt="Biking Como">
+        </div>
+        <div class="caption">🚲 <strong>Bike Alternative</strong> <span class="place-price">~25-35 EUR</span>
+          <br>E-bikes from <a href="https://www.econoleggiocomolake.it/noleggio-bici/" target="_blank">Econoleggio Como Lake</a>. Menaggio-Sorico route is gorgeous.</div>
+      </div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/villa-carlotta-1.jpg" alt="Villa Carlotta">
+          <img src="img/villa-carlotta-2.jpg" alt="Villa Carlotta gardens">
+        </div>
+        <div class="caption">☂ <strong>Rain backup:</strong> <a href="https://www.google.com/maps/place/Villa+Carlotta" target="_blank">Villa Carlotta</a> - botanical garden + art museum. Worth it in drizzle
+          <br>🏖 <strong>Swim:</strong> Lido di Lenno or beaches near Colonno - crystal water</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 2: Food -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 2 &mdash; Where to Eat</h2>
+  <div class="tricolore"></div>
+
+  <div class="grid-2">
+    <div>
+      <h3>Lunch - Brunate</h3>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/cacciatore-1.jpg" alt="Cacciatore">
+          <img src="img/cacciatore-2.jpg" alt="Cacciatore view">
+          <img src="img/cacciatore-3.jpg" alt="Cacciatore food">
+        </div>
+        <div class="caption">🍝 <strong>Trattoria del Cacciatore</strong> <span class="place-price">~25-35 EUR/pp</span>
+          <br>Killer lake view from Brunate hilltop. 10 min from funicular. Order game + local dishes.
+          <br><a href="https://www.google.com/maps/search/Trattoria+del+Cacciatore+Brunate" target="_blank">Maps</a></div>
+      </div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/missoltini.jpg" alt="Missultini">
+        </div>
+        <div class="caption"><strong>Missultini</strong> <span class="place-tag">MUST TRY</span> - Sun-dried lake fish, iconic Como dish. Order everywhere!</div>
+      </div>
+    </div>
+    <div>
+      <h3>Dinner - Como</h3>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/osteria-gallo.jpg" alt="Osteria del Gallo">
+        </div>
+        <div class="caption">🍷 <strong>Osteria del Gallo</strong> <span class="place-price">~25-35 EUR/pp</span> <span class="place-tag">SLOW FOOD 2025</span>
+          <br>Feels like an old village inn. Cortesella, Como.
+          <br><a href="https://www.google.com/maps/search/Osteria+del+Gallo+Como" target="_blank">Maps</a></div>
+      </div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/crotto-sergente-1.jpg" alt="Crotto 1">
+          <img src="img/crotto-sergente-2.jpg" alt="Crotto 2">
+          <img src="img/crotto-sergente-3.jpg" alt="Crotto 3">
+          <img src="img/crotto-sergente-menu.jpg" alt="Crotto menu">
+        </div>
+        <div class="caption">🍷 <strong>Crotto del Sergente</strong> <span class="place-price">~20-30 EUR/pp</span>
+          <br>One of the few "real" restaurants in Como. Locals know it.
+          <br><a href="https://www.google.com/maps/search/Crotto+del+Sergente+Como" target="_blank">Maps</a></div>
+      </div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/governo-1.jpg" alt="Governo">
+          <img src="img/governo-food.jpg" alt="Governo food">
+        </div>
+        <div class="caption">🍷 <strong>Osteria il Governo</strong> <span class="place-price">~25-35 EUR/pp</span>
+          <br>Lezzeno. Garden + lake view. km0. Order missultini!
+          <br><a href="https://www.google.com/maps/search/Osteria+il+Governo+Lezzeno" target="_blank">Maps</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 2: Gelato, Sleep, Tips -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 2 &mdash; Gelato, Sleep & Tips</h2>
+  <div class="tricolore"></div>
+
+  <div class="grid-2">
+    <div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/guidi-gelato-1.jpg" alt="Gelateria Guidi">
+          <img src="img/guidi-gelato-2.jpg" alt="Gelateria Guidi 2">
+        </div>
+        <div class="caption">🍦 <strong>Gelateria Guidi</strong> <span class="place-tag">BEST IN COMO</span> <span class="place-price">~3-5 EUR</span><br>Via Domenico Fontana. <a href="https://www.google.com/maps/search/Gelateria+Guidi+Como" target="_blank">Maps</a>
+        <br>Also: <strong>Gelab</strong> near Duomo, Via Cinque Giornate. <a href="https://www.google.com/maps/search/Gelab+Como" target="_blank">Maps</a></div>
+      </div>
+
+      <h3>🌙 Evening</h3>
+      <p class="tiny">Walk the lungolago, drink at a bar on Piazza Cavour watching the lake.</p>
+    </div>
+    <div>
+      <h3>🛏 Where to Sleep</h3>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/treterre-1.jpg" alt="Treterre">
+          <img src="img/treterre-2.jpg" alt="Treterre pool">
+        </div>
+        <div class="caption">🌾 <strong>Agriturismo Treterre</strong> <span class="place-price">~90-120 EUR</span> <span class="place-tag">TOP PICK</span>
+          <br>Infinity pool. Rustic chic. Panoramic Como views.
+          <br><a href="https://www.google.com/maps/search/Agriturismo+Treterre+Como" target="_blank">Maps</a></div>
+      </div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/vista-lago-1.jpg" alt="Vista Lago">
+          <img src="img/vista-lago-2.jpg" alt="Vista Lago balcony">
+        </div>
+        <div class="caption">🛏 <strong>B&B Vista Lago</strong> <span class="place-price">~80-110 EUR</span>
+          <br>Rated 9.2. Lake + mountain view balcony EVERY room. Free parking.
+          <br><a href="https://www.google.com/maps/search/B%26B+Vista+Lago+Como" target="_blank">Maps</a></div>
+      </div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/al-marnich-1.jpg" alt="Al-Marnich">
+          <img src="img/al-marnich-2.jpg" alt="Al-Marnich 2">
+        </div>
+        <div class="caption">🌾 <strong>Agriturismo Al-Marnich</strong> <span class="place-price">~80-100 EUR</span>
+          <br>Schignano. Bio restaurant on-site. Rustic rooms.
+          <br><a href="https://www.google.com/maps/search/Agriturismo+Al-Marnich+Como" target="_blank">Maps</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- ==================== DAY 3: LAKE GARDA ==================== -->
+<section>
+<section data-background-image="img/hero-garda.jpg" data-background-opacity="0.85" data-background-color="#2C2C2C">
+  <div class="hero-slide">
+    <span class="day-badge">DAY 3 &bull; TUESDAY JUN 2</span>
+    <h1 style="color:white">Lake Garda</h1>
+    <p style="color:rgba(255,255,255,0.9); font-size:0.9em;">Sirmione & Isola del Garda</p>
+    <div class="tricolore" style="width:150px; margin:15px auto;"></div>
+    <div style="display:flex; justify-content:center; gap:30px; margin-top:20px;">
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">2h</div><div class="label" style="color:rgba(255,255,255,0.7);">driving</div></div>
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">100 km</div><div class="label" style="color:rgba(255,255,255,0.7);">Como &rarr; Sirmione</div></div>
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">~7h</div><div class="label" style="color:rgba(255,255,255,0.7);">free roam</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 3: Drive + Schedule -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 3 &mdash; Drive & Schedule</h2>
+  <div class="tricolore"></div>
+  <div class="grid-2">
+    <div>
+      <div class="drive-box">
+        <h3>🚗 Como &rarr; Sirmione</h3>
+        <div class="drive-stats">
+          <div class="drive-stat"><div class="num">100</div><div class="label">km</div></div>
+          <div class="drive-stat"><div class="num">2h</div><div class="label">drive</div></div>
+          <div class="drive-stat"><div class="num">08:30</div><div class="label">depart</div></div>
+        </div>
+        <p style="font-size:0.75em; margin-top:10px; opacity:0.9;">🛣 A4 autostrada - save scenic energy for Strada della Forra tomorrow!</p>
+        <p class="tiny" style="opacity:0.7;"><a href="https://www.google.com/maps/dir/Como/Sirmione" target="_blank" style="color:white;">Google Maps &rarr;</a></p>
+      </div>
+      <table class="schedule">
+        <tr><td>08:30</td><td>🚗 Drive Como &rarr; Sirmione</td></tr>
+        <tr><td>11:00</td><td>🏛 <strong>Sirmione old town</strong> + Castello Scaligero + Grotte di Catullo</td></tr>
+        <tr><td>13:00</td><td>🍝 Lunch in Sirmione</td></tr>
+        <tr><td>14:30</td><td>🏝 <strong>Isola del Garda</strong> guided tour (boat + villa + wine)</td></tr>
+        <tr><td>17:30</td><td>🏖 Chill at accommodation, lakeside walk</td></tr>
+        <tr><td>20:00</td><td>🍝 Dinner</td></tr>
+      </table>
+    </div>
+    <div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/isola-garda.jpg" alt="Isola del Garda">
+        </div>
+        <div class="caption">🏝 <strong>Isola del Garda</strong> <span class="place-price">39-49 EUR/pp</span> <span class="place-tag">BOOK AHEAD</span>
+          <br>Neo-Gothic villa + gardens + wine tasting + olive oil DOP. ~2.5h.
+          <br><a href="https://www.isoladelgarda.com/en/guided-tours" target="_blank">Book here</a> &nbsp;|&nbsp; <a href="https://www.google.com/maps/search/Isola+del+Garda" target="_blank">Maps</a></div>
+      </div>
+      <div class="alert-box red-alert">
+        <strong>⚠️ Closed Mondays!</strong> Tuesday is perfect. Boat from Sirmione ~30 min each way.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 3: Food -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 3 &mdash; Where to Eat</h2>
+  <div class="tricolore"></div>
+  <div class="grid-2">
+    <div>
+      <h3>Lunch - Sirmione</h3>
+      <div class="place">
+        <div class="place-icon">🍝</div>
+        <div class="place-info">
+          <div class="place-name">Trattoria Clementina <span class="place-price">~25-35 EUR/pp</span></div>
+          <div class="place-detail">Authentic with courtyard. Zero tourist BS. Local lake fish.
+            <br><a href="https://www.google.com/maps/search/Trattoria+Clementina+Sirmione" target="_blank">Maps</a></div>
+        </div>
+      </div>
+      <div class="place">
+        <div class="place-icon">🍷</div>
+        <div class="place-info">
+          <div class="place-name">Osteria del Vecchio Fossato <span class="place-price">~25-35 EUR/pp</span></div>
+          <div class="place-detail">Hidden in old walls, intimate. Tagliatelle with trout, aole sale.
+            <br><a href="https://www.google.com/maps/search/Osteria+Vecchio+Fossato+Sirmione" target="_blank">Maps</a></div>
+        </div>
+      </div>
+      <h3>Dinner</h3>
+      <div class="place">
+        <div class="place-icon">🍽</div>
+        <div class="place-info">
+          <div class="place-name">Casa dei Pescatori <span class="place-price">~30-40 EUR/pp</span></div>
+          <div class="place-detail">ON the water near Castello. Lake fish, organic/seasonal.
+            <br><a href="https://www.google.com/maps/search/Casa+dei+Pescatori+Sirmione" target="_blank">Maps</a></div>
+        </div>
+      </div>
+      <div class="place">
+        <div class="place-icon">🍝</div>
+        <div class="place-info">
+          <div class="place-name">Trattoria Da Renato <span class="place-price">~20-30 EUR/pp</span></div>
+          <div class="place-detail">Family place, Desenzano. Good prices.
+            <br><a href="https://www.google.com/maps/search/Trattoria+Da+Renato+Desenzano" target="_blank">Maps</a></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>Must Try</h3>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/risotto.jpg" alt="Bigoli con sarde">
+        </div>
+        <div class="caption"><strong>Bigoli con le sarde del Garda</strong> <span class="place-tag">THE DISH</span> - thick pasta with Garda lake sardines. Order it everywhere.</div>
+      </div>
+      <h3>🏖 Swim</h3>
+      <div class="card">
+        <span class="tiny"><strong>Lido delle Bionde</strong> - thermal spring water mixes into lake! Warmer.
+          <br><strong>Jamaica Beach</strong> - flat rocks, popular with locals.
+          <br><a href="https://www.google.com/maps/search/Jamaica+Beach+Sirmione" target="_blank">Maps</a></span>
+      </div>
+      <h3>🌙 Nightlife</h3>
+      <div class="card">
+        <span class="tiny"><strong>Desenzano del Garda</strong> - THE nightlife hub on Garda. Bars, live music, clubs until 2am. Walk the waterfront.</span>
+      </div>
+      <h3>☂ Rain</h3>
+      <div class="card">
+        <span class="tiny"><strong>Terme di Sirmione</strong> - thermal spa day. Indoor pools + treatments.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 3: Sleep -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 3 &mdash; Where to Sleep</h2>
+  <div class="tricolore"></div>
+  <div class="grid-3">
+    <div class="img-card">
+      <div class="thumb-row">
+        <img src="img/la-filanda-1.jpg" alt="La Filanda">
+        <img src="img/la-filanda-2.jpg" alt="La Filanda 2">
+      </div>
+      <div class="caption">🌾 <strong>Agriturismo La Filanda</strong> <span class="place-price">~80-120 EUR</span>
+        <br>Historic 1800s farmhouse on Garda shores. Pool.
+        <br><a href="https://www.google.com/maps/search/Agriturismo+La+Filanda+Garda" target="_blank">Maps</a></div>
+    </div>
+    <div class="img-card">
+      <div class="thumb-row">
+        <img src="img/bb-beatrice-1.jpg" alt="B&B Beatrice">
+        <img src="img/bb-beatrice-2.jpg" alt="B&B Beatrice 2">
+      </div>
+      <div class="caption">🛏 <strong>B&B da Beatrice</strong> <span class="place-price">~70-90 EUR</span>
+        <br>Garden + pool. Quiet. 2km from Sirmione center.
+        <br><a href="https://www.google.com/maps/search/B%26B+da+Beatrice+Sirmione" target="_blank">Maps</a></div>
+    </div>
+    <div class="img-card">
+      <div class="thumb-row">
+        <img src="img/il-ghetto-1.jpg" alt="Il Ghetto">
+        <img src="img/il-ghetto-2.jpg" alt="Il Ghetto 2">
+      </div>
+      <div class="caption">🌾 <strong>Agriturismo Il Ghetto</strong> <span class="place-price">~70-100 EUR</span>
+        <br>Countryside 1.2km from lake. Rustic vibe.
+        <br><a href="https://www.google.com/maps/search/Agriturismo+Il+Ghetto+Garda" target="_blank">Maps</a></div>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- ==================== DAY 4: RIVA + MOLVENO ==================== -->
+<section>
+<section data-background-image="img/hero-forra.jpg" data-background-opacity="0.85" data-background-color="#2C2C2C">
+  <div class="hero-slide">
+    <span class="day-badge">DAY 4 &bull; WEDNESDAY JUN 3</span>
+    <h1 style="color:white">Strada della Forra + Molveno</h1>
+    <p style="color:rgba(255,255,255,0.9); font-size:0.9em;">Hike #1: Sentiero del Ponale</p>
+    <div class="tricolore" style="width:150px; margin:15px auto;"></div>
+    <div style="display:flex; justify-content:center; gap:30px; margin-top:20px;">
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">2.5h</div><div class="label" style="color:rgba(255,255,255,0.7);">driving</div></div>
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">100 km</div><div class="label" style="color:rgba(255,255,255,0.7);">Garda &rarr; Riva &rarr; Molveno</div></div>
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">~8h</div><div class="label" style="color:rgba(255,255,255,0.7);">free roam</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 4: Drive + Hike -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 4 &mdash; Drive & Hike</h2>
+  <div class="tricolore"></div>
+  <div class="grid-2">
+    <div>
+      <div class="drive-box" style="background:linear-gradient(135deg, var(--red), #e03050);">
+        <h3>🛣 Strada della Forra <span style="font-size:0.7em;">DO NOT MISS</span></h3>
+        <p style="font-size:0.75em; opacity:0.95;">6 km of INSANE hairpins through a gorge carved in rock. Most spectacular road in Europe. James Bond (Quantum of Solace).</p>
+        <p class="tiny" style="opacity:0.7;"><a href="https://www.google.com/maps/search/Strada+della+Forra+Tremosine" target="_blank" style="color:white;">Google Maps &rarr;</a></p>
+      </div>
+      <div class="card" style="border-left-color:var(--green);">
+        <h3>🥾 Sentiero del Ponale</h3>
+        <p class="tiny"><strong>6 km RT</strong> &bull; <strong>2-2.5h</strong> &bull; <strong>+200m</strong> &bull; Easy-moderate
+          <br>Old road carved into CLIFF FACE above Lake Garda. Tunnels through rock, views straight down to turquoise water.
+          <br>Lunch at <strong>Ponale Alto Belvedere</strong> restaurant at the turnaround.
+          <br><a href="https://www.google.com/maps/search/Sentiero+del+Ponale+Riva" target="_blank">Maps</a></p>
+      </div>
+      <table class="schedule">
+        <tr><td>08:30</td><td>🛣 Drive via <strong>Strada della Forra</strong></td></tr>
+        <tr><td>10:00</td><td>🥾 <strong>Sentiero del Ponale</strong> hike</td></tr>
+        <tr><td>12:30</td><td>🍽 Lunch Riva del Garda</td></tr>
+        <tr><td>14:00</td><td>🚗 Drive Riva &rarr; Molveno</td></tr>
+        <tr><td>15:30</td><td>🏖 Molveno beach + swim</td></tr>
+        <tr><td>17:30</td><td>🚶 Fortini di Napoleone walk</td></tr>
+      </table>
+    </div>
+    <div>
+      <div class="card">
+        <span class="tiny">🍽 <strong>Lunch:</strong> Riva del Garda lakefront - proper town, not a tourist trap. Or eat at <strong>Ponale Alto Belvedere</strong> during the hike.</span>
+      </div>
+      <h3>Dinner - Molveno</h3>
+      <div class="place">
+        <div class="place-icon">🍝</div>
+        <div class="place-info">
+          <div class="place-name">Trattoria al Faggio <span class="place-price">~20-30 EUR/pp</span></div>
+          <div class="place-detail">Top-rated. Canederli, polenta, spezzatino di capriolo.
+            <br><a href="https://www.google.com/maps/search/Trattoria+al+Faggio+Molveno" target="_blank">Maps</a></div>
+        </div>
+      </div>
+      <div class="place">
+        <div class="place-icon">🍽</div>
+        <div class="place-info">
+          <div class="place-name">All'Aquila Nera e Cima Tosa <span class="place-price">~20-30 EUR/pp</span></div>
+          <div class="place-detail">Centro. Excellent quality/price. Trentino specialties.
+            <br><a href="https://www.google.com/maps/search/Aquila+Nera+Cima+Tosa+Molveno" target="_blank">Maps</a></div>
+        </div>
+      </div>
+      <h3>🏖 Swim</h3>
+      <div class="card"><span class="tiny"><strong>Spiaggia Lago di Molveno</strong> - 5 Vele award (best beach in Italy!). Water ~16-18C. Quick dip.</span></div>
+      <h3>🌙 / ☂</h3>
+      <div class="card"><span class="tiny">🌙 <strong>Sailing Bar</strong> in Riva - ship-shaped bar, sunset aperitivo + DJ sets.
+        <br>☂ <strong>Climbing Stadium Arco</strong> - indoor climbing wall. Or <strong>Castello di Stenico</strong> (20 min).</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 4: Sleep -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 4-5 &mdash; Where to Sleep (2 nights)</h2>
+  <div class="tricolore"></div>
+  <div class="grid-3">
+    <div class="img-card">
+      <div class="thumb-row">
+        <img src="img/ai-castioni-1.jpg" alt="Ai Castioni">
+        <img src="img/ai-castioni-2.jpg" alt="Ai Castioni 2">
+        <img src="img/ai-castioni-3.jpg" alt="Ai Castioni 3">
+      </div>
+      <div class="caption">🌾 <strong>Agriturismo Ai Castioni</strong> <span class="place-price">~90-120 EUR</span>
+        <br>Lake + Brenta Dolomites view from balcony. Peaceful.
+        <br><a href="https://www.google.com/maps/search/Agriturismo+Ai+Castioni+Molveno" target="_blank">Maps</a></div>
+    </div>
+    <div class="img-card">
+      <div class="thumb-row">
+        <img src="img/il-nido-1.jpg" alt="Il Nido">
+        <img src="img/il-nido-2.jpg" alt="Il Nido 2">
+      </div>
+      <div class="caption">🛏 <strong>B&B Il Nido</strong> <span class="place-price">~70-90 EUR</span> <span class="place-tag">FREE CABLE CARS</span>
+        <br>Breakfast + parking + Dolomiti Paganella Guest Card included!
+        <br><a href="https://www.google.com/maps/search/B%26B+Il+Nido+Molveno" target="_blank">Maps</a></div>
+    </div>
+    <div class="img-card">
+      <div class="thumb-row">
+        <img src="img/le-coccole-1.jpg" alt="Le Coccole">
+        <img src="img/le-coccole-2.jpg" alt="Le Coccole 2">
+      </div>
+      <div class="caption">🛏 <strong>B&B Le Coccole</strong> <span class="place-price">~80-100 EUR</span>
+        <br>Overlooking Lake Molveno. "Corner of paradise".
+        <br><a href="https://www.google.com/maps/search/B%26B+Le+Coccole+Molveno" target="_blank">Maps</a></div>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- ==================== DAY 5: BRENTA + TOVEL ==================== -->
+<section>
+<section data-background-image="img/hero-brenta.jpg" data-background-opacity="0.85" data-background-color="#2C2C2C">
+  <div class="hero-slide">
+    <span class="day-badge">DAY 5 &bull; THURSDAY JUN 4</span>
+    <h1 style="color:white">Brenta Dolomites</h1>
+    <p style="color:rgba(255,255,255,0.9); font-size:0.9em;">Hike #2: Rifugio Croz dell'Altissimo + Lago di Tovel</p>
+    <div class="tricolore" style="width:150px; margin:15px auto;"></div>
+    <div style="display:flex; justify-content:center; gap:30px; margin-top:20px;">
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">1h</div><div class="label" style="color:rgba(255,255,255,0.7);">driving</div></div>
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">60 km</div><div class="label" style="color:rgba(255,255,255,0.7);">Molveno &harr; Tovel</div></div>
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">~9h</div><div class="label" style="color:rgba(255,255,255,0.7);">the chill day</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 5: Hike + Activities -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 5 &mdash; Hike & Activities</h2>
+  <div class="tricolore"></div>
+  <div class="grid-2">
+    <div>
+      <div class="card" style="border-left-color:var(--green); border-left-width:4px;">
+        <h3>🥾 Rifugio Croz dell'Altissimo</h3>
+        <p class="tiny"><strong>~6 km RT from Pradel</strong> &bull; <strong>3h</strong> &bull; <strong>+400m</strong> &bull; Medium
+          <br>Take cabinovia from Molveno to Pradel (cable car does first 800m!). Forest paths into the heart of Brenta Dolomites. Rock walls towering above.
+          <br><strong>EAT LUNCH HERE:</strong> canederli, polenta, strudel with Dolomite panorama.
+          <br>Bring a layer - cooler up there.
+          <br><a href="https://www.google.com/maps/search/Rifugio+Croz+dell+Altissimo+Molveno" target="_blank">Maps</a></p>
+      </div>
+      <table class="schedule">
+        <tr><td>08:00</td><td>🚡 Cabinovia up to Pradel</td></tr>
+        <tr><td>08:30</td><td>🥾 Hike to Rifugio + lunch there</td></tr>
+        <tr><td>12:00</td><td>🚡 Cabinovia down</td></tr>
+        <tr><td>13:00</td><td>🏖 Chill at Molveno lake</td></tr>
+        <tr><td>14:30</td><td>🚗 Drive to <strong>Lago di Tovel</strong></td></tr>
+        <tr><td>15:00</td><td>🚶 Walk around Tovel (4 km, 1.5h)</td></tr>
+        <tr><td>18:00</td><td>🏖 Beach, evening walk</td></tr>
+      </table>
+    </div>
+    <div>
+      <div class="card">
+        <h3>Lago di Tovel - "The Red Lake"</h3>
+        <p class="tiny">4 km loop, flat, ~1.5h. Beautiful forest setting. 30 min drive from Molveno.
+          <br><a href="https://www.google.com/maps/search/Lago+di+Tovel" target="_blank">Maps</a></p>
+      </div>
+      <div class="card"><span class="tiny">🍽 <strong>Lunch:</strong> At Rifugio Croz dell'Altissimo - canederli, polenta, strudel.
+        <br>🍽 <strong>Dinner:</strong> Same Molveno options as Day 4 - try what you missed.</span></div>
+      <div class="card"><span class="tiny">🏖 <strong>Swim:</strong> Lago di Molveno after the hike. Lago di Tovel = beautiful but COLD (1178m).
+        <br>☂ <strong>Rain:</strong> Andalo Life Park (pool, spa, 10 min). Or Castel Thun (medieval, frescoed rooms, 30 min).</span></div>
+      <h3>Sleep</h3>
+      <div class="card"><span class="tiny">Same place as Day 4 (2nd night in Molveno). See previous slide for options.</span></div>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- ==================== DAY 6: DOLOMITES ==================== -->
+<section>
+<section data-background-image="img/pragser.jpg" data-background-opacity="0.85" data-background-color="#2C2C2C">
+  <div class="hero-slide">
+    <span class="day-badge">DAY 6 &bull; FRIDAY JUN 5</span>
+    <h1 style="color:white">Lago di Braies</h1>
+    <p style="color:rgba(255,255,255,0.9); font-size:0.9em;">Val Pusteria & South Tyrol</p>
+    <div class="tricolore" style="width:150px; margin:15px auto;"></div>
+    <div style="display:flex; justify-content:center; gap:30px; margin-top:20px;">
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">2h</div><div class="label" style="color:rgba(255,255,255,0.7);">driving</div></div>
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">130 km</div><div class="label" style="color:rgba(255,255,255,0.7);">Molveno &rarr; Braies</div></div>
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">~7h</div><div class="label" style="color:rgba(255,255,255,0.7);">free roam</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 6: Drive + Activities -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 6 &mdash; Drive & Activities</h2>
+  <div class="tricolore"></div>
+  <div class="grid-2">
+    <div>
+      <div class="drive-box">
+        <h3>🚗 Molveno &rarr; Pragser Wildsee</h3>
+        <div class="drive-stats">
+          <div class="drive-stat"><div class="num">130</div><div class="label">km</div></div>
+          <div class="drive-stat"><div class="num">2h</div><div class="label">drive</div></div>
+          <div class="drive-stat"><div class="num">08:30</div><div class="label">depart</div></div>
+        </div>
+        <p style="font-size:0.75em; margin-top:10px; opacity:0.9;">🛣 <strong>Val di Non &rarr; Val di Sole &rarr; Val Pusteria.</strong> All mountain roads. Every turn = Dolomite postcard. Fill up gas!</p>
+        <p class="tiny" style="opacity:0.7;"><a href="https://www.google.com/maps/dir/Molveno/Lago+di+Braies" target="_blank" style="color:white;">Google Maps &rarr;</a></p>
+      </div>
+      <table class="schedule">
+        <tr><td>08:30</td><td>🚗 Scenic drive through Dolomites</td></tr>
+        <tr><td>11:00</td><td>🚶 <strong>Lago di Braies</strong> loop (3.5 km, 1.5h)</td></tr>
+        <tr><td>12:30</td><td>🚣 Rent rowing boat on the lake</td></tr>
+        <tr><td>13:00</td><td>🍽 Lunch near the lake</td></tr>
+        <tr><td>14:30</td><td>🏘 Explore Val Pusteria villages</td></tr>
+        <tr><td>19:00</td><td>🍺 Dinner at a Gasthaus</td></tr>
+      </table>
+    </div>
+    <div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/pragser.jpg" alt="Lago di Braies">
+        </div>
+        <div class="caption">🚶 <strong>Lago di Braies</strong> - 3.5 km loop, 1.5h, easy. Turquoise water + Dolomite backdrop. Rowing boats at north end.
+          <br>End of May = road <strong>OPEN</strong>!
+          <br><a href="https://www.google.com/maps/search/Lago+di+Braies" target="_blank">Maps</a></div>
+      </div>
+      <div class="card"><span class="tiny">🍺 <strong>Dinner:</strong> Any Gasthaus in Dobbiaco/Monguelfo. Order <strong>speck, canederli, schlutzkrapfen, kaiserschmarrn</strong>.
+        <br>🏖 <strong>Swim:</strong> Braies = ICE COLD (1496m, ~12-14C). Feet in = yes. Full swim = legend status.
+        <br>🌙 <strong>Nightlife:</strong> Beers at the Gasthaus. Or Brunico (30 min) for bars.
+        <br>☂ <strong>Rain:</strong> MMM Messner Mountain Museum in Brunico. Or: enjoy the maso breakfast + chill. You've earned it.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 6: Sleep -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 6 &mdash; Where to Sleep</h2>
+  <div class="tricolore"></div>
+  <div class="grid-2">
+    <div class="img-card">
+      <div class="thumb-row">
+        <img src="img/hanslerhof-1.jpg" alt="Hanslerhof">
+        <img src="img/hanslerhof-2.jpg" alt="Hanslerhof 2">
+      </div>
+      <div class="caption">🐄 <strong>Hanslerhof</strong> <span class="place-price">~80-110 EUR</span> <span class="place-tag">TOP PICK</span>
+        <br><strong>5.7 km from Lago di Braies!</strong> Family farm at 1350m. INSANE breakfast: homemade speck, eggs, milk, strudel, syrups, yogurt.
+        <br><a href="https://www.google.com/maps/search/Hanslerhof+Braies" target="_blank">Maps</a> &nbsp;|&nbsp; <a href="https://www.hanslerhof-dolomiti.com/" target="_blank">Website</a></div>
+    </div>
+    <div>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/gallorosso-maso.jpg" alt="Gallorosso maso">
+        </div>
+        <div class="caption">🐄 <strong>Gallorosso maso, Dobbiaco</strong> <span class="place-price">~70-100 EUR</span>
+          <br>Curated South Tyrol farm stays. Pick your style.
+          <br><a href="https://www.gallorosso.it" target="_blank">gallorosso.it</a></div>
+      </div>
+      <div class="place">
+        <div class="place-icon">🛏</div>
+        <div class="place-info">
+          <div class="place-name">B&B in Monguelfo/Villabassa <span class="place-price">~60-90 EUR</span></div>
+          <div class="place-detail">15-20 min from Braies. Typical Tyrolean style. Check Booking.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- ==================== DAY 7: VENICE ==================== -->
+<section>
+<section data-background-image="img/hero-venice.jpg" data-background-opacity="0.85" data-background-color="#2C2C2C">
+  <div class="hero-slide">
+    <span class="day-badge">DAY 7 &bull; SATURDAY JUN 6</span>
+    <h1 style="color:white">Venice</h1>
+    <p style="color:rgba(255,255,255,0.9); font-size:0.9em;">Bacaro Tour & Cicchetti</p>
+    <div class="tricolore" style="width:150px; margin:15px auto;"></div>
+    <div style="display:flex; justify-content:center; gap:30px; margin-top:20px;">
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">3.5h</div><div class="label" style="color:rgba(255,255,255,0.7);">driving</div></div>
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">210 km</div><div class="label" style="color:rgba(255,255,255,0.7);">Dolomites &rarr; Venice</div></div>
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">~8h</div><div class="label" style="color:rgba(255,255,255,0.7);">free roam</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 7: Drive + Schedule -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 7 &mdash; Drive & Schedule</h2>
+  <div class="tricolore"></div>
+  <div class="grid-2">
+    <div>
+      <div class="drive-box">
+        <h3>🚗 Val Pusteria &rarr; Venice</h3>
+        <div class="drive-stats">
+          <div class="drive-stat"><div class="num">210</div><div class="label">km</div></div>
+          <div class="drive-stat"><div class="num">3.5h</div><div class="label">drive</div></div>
+          <div class="drive-stat"><div class="num">09:00</div><div class="label">depart</div></div>
+        </div>
+        <p style="font-size:0.75em; margin-top:10px; opacity:0.9;">🛣 South through Dolomite foothills via Belluno. Alpine peaks &rarr; rolling hills &rarr; Veneto plain.</p>
+        <p class="tiny" style="opacity:0.7;"><a href="https://www.google.com/maps/dir/Braies/Venice" target="_blank" style="color:white;">Google Maps &rarr;</a></p>
+      </div>
+      <table class="schedule">
+        <tr><td>08:00</td><td>🥐 Epic Tyrolean breakfast at the maso</td></tr>
+        <tr><td>09:00</td><td>🚗 Drive south</td></tr>
+        <tr><td>11:00</td><td>🏖 <strong>Lago di Santa Croce</strong> swim stop</td></tr>
+        <tr><td>13:30</td><td>🅿 Park car (Mestre)</td></tr>
+        <tr><td>14:00</td><td>🍽 Lunch in Venice</td></tr>
+        <tr><td>15:00</td><td>🚶 Dorsoduro, San Marco, Rialto</td></tr>
+        <tr><td>19:30</td><td>🦑 <strong>Bacaro tour</strong> Cannaregio</td></tr>
+      </table>
+    </div>
+    <div>
+      <div class="alert-box">
+        <strong>🅿 Parking:</strong> <strong>Mestre</strong> <span class="place-price">5-15 EUR/day</span> + train 10 min.
+        <br><span class="tiny">Pre-book on <a href="https://parclick.it/parcheggio-venezia" target="_blank">parclick.it</a></span>
+      </div>
+      <h3>🦑 Bacaro Tour (THIS IS THE WAY)</h3>
+      <p class="tiny">Hop between 3-4 bacari. Eat cicchetti (small bites) at each. Drink an "ombra" (small wine). 3-4 stops = dinner.</p>
+      <div class="place"><div class="place-icon">🦑</div><div class="place-info"><div class="place-name">Cantina Do Spade <span class="place-price">~3-5 EUR/cicchetto</span></div><div class="place-detail">Open since <strong>1448</strong>. Near Rialto. <a href="https://www.google.com/maps/search/Cantina+Do+Spade+Venice" target="_blank">Maps</a></div></div></div>
+      <div class="place"><div class="place-icon">🦑</div><div class="place-info"><div class="place-name">All'Arco</div><div class="place-detail">Family-run, tiny. Seasonal cicchetti. <a href="https://www.google.com/maps/search/All+Arco+Venice" target="_blank">Maps</a></div></div></div>
+      <div class="place"><div class="place-icon">🦑</div><div class="place-info"><div class="place-name">Alla Vedova <span class="place-tag">LEGENDARY</span></div><div class="place-detail">Polpette (meatballs). Must order. <a href="https://www.google.com/maps/search/Alla+Vedova+Venice" target="_blank">Maps</a></div></div></div>
+      <div class="place"><div class="place-icon">🦑</div><div class="place-info"><div class="place-name">Taverna al Remer <span class="place-tag">HIDDEN GEM</span></div><div class="place-detail">Secret campiello FACING Grand Canal. Anonymous alley entrance. <a href="https://www.google.com/maps/search/Taverna+al+Remer+Venice" target="_blank">Maps</a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 7: Gelato + Sleep -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 7 &mdash; Gelato, Sleep & Tips</h2>
+  <div class="tricolore"></div>
+  <div class="grid-2">
+    <div>
+      <h3>🍦 Gelato</h3>
+      <div class="place"><div class="place-icon">🍦</div><div class="place-info"><div class="place-name">Gelateria Suso <span class="place-price">~3-5 EUR</span></div><div class="place-detail">Near Rialto. Natural ingredients, eco-conscious. <a href="https://www.google.com/maps/search/Gelateria+Suso+Venice" target="_blank">Maps</a></div></div></div>
+      <div class="place"><div class="place-icon">🍦</div><div class="place-info"><div class="place-name">Da Nico <span class="place-tag">THE MOMENT</span></div><div class="place-detail">Zattere, Dorsoduro. 80+ years. <strong>Gianduiotto</strong> (choc-hazelnut block). Terrace on Giudecca canal. <a href="https://www.google.com/maps/search/Da+Nico+Zattere+Venice" target="_blank">Maps</a></div></div></div>
+      <div class="place"><div class="place-icon">🍦</div><div class="place-info"><div class="place-name">Alaska Gelateria</div><div class="place-detail">30+ years. Creative: zafferano, cardamomo, zenzero. <a href="https://www.google.com/maps/search/Alaska+Gelateria+Venice" target="_blank">Maps</a></div></div></div>
+      <h3>Must-try cicchetti</h3>
+      <div class="card"><span class="tiny"><strong>Baccala mantecato</strong> su crostino (creamed cod - ICONIC)
+        <br><strong>Sarde in saor</strong> (sweet & sour sardines)
+        <br><strong>Polpette</strong> (meatballs) + <strong>Frittura</strong></span></div>
+      <h3>🌙 Nightlife</h3>
+      <div class="card"><span class="tiny"><strong>Fondamenta della Misericordia</strong> - THE spot. Multiple bars, locals, lively late. Cannaregio.</span></div>
+      <h3>☂ Rain</h3>
+      <div class="card"><span class="tiny">Venice in rain = still amazing. <strong>Peggy Guggenheim</strong> (modern art) or <strong>Teatro La Fenice</strong> (opera house tour).</span></div>
+    </div>
+    <div>
+      <h3>🛏 Where to Sleep (1 night)</h3>
+      <div class="img-card">
+        <div class="thumb-row">
+          <img src="img/venice-bb-1.jpg" alt="Venice B&B">
+          <img src="img/venice-bb-2.jpg" alt="Venice B&B 2">
+        </div>
+        <div class="caption">🛏 <strong>B&B in Cannaregio</strong> <span class="place-price">~70-100 EUR</span> <span class="place-tag">RECOMMENDED</span>
+          <br>Best value in Venice. Near Alla Vedova, Al Timon, Fondamenta della Misericordia.
+          <br><a href="https://www.google.com/maps/search/B%26B+Cannaregio+Venice" target="_blank">Maps</a></div>
+      </div>
+      <div class="place"><div class="place-icon">🛏</div><div class="place-info"><div class="place-name">B&B in Dorsoduro <span class="place-price">~80-120 EUR</span></div><div class="place-detail">Artsy quarter. Near galleries + Zattere.</div></div></div>
+      <div class="place"><div class="place-icon">🏨</div><div class="place-info"><div class="place-name">Mestre (mainland) <span class="place-price">~50-70 EUR</span></div><div class="place-detail">Cheapest. 10 min train. Less charm, saves ~40 EUR.</div></div></div>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- ==================== DAY 8: MILAN ==================== -->
+<section>
+<section data-background-image="img/hero-venice.jpg" data-background-opacity="0.85" data-background-color="#2C2C2C">
+  <div class="hero-slide">
+    <span class="day-badge">DAY 8 &bull; SUNDAY JUN 7</span>
+    <h1 style="color:white">Venice &rarr; Milan</h1>
+    <p style="color:rgba(255,255,255,0.9); font-size:0.9em;">Last Italian meal + Flight home</p>
+    <div class="tricolore" style="width:150px; margin:15px auto;"></div>
+    <div style="display:flex; justify-content:center; gap:30px; margin-top:20px;">
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">3h</div><div class="label" style="color:rgba(255,255,255,0.7);">driving</div></div>
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">270 km</div><div class="label" style="color:rgba(255,255,255,0.7);">Venice &rarr; Milan</div></div>
+      <div class="drive-stat"><div class="num" style="color:white; text-shadow:1px 1px 4px rgba(0,0,0,0.5);">✈ 20:00</div><div class="label" style="color:rgba(255,255,255,0.7);">flight home</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Day 8: Schedule + Food -->
+<section data-background-color="#FFF8F0">
+  <h2>Day 8 &mdash; Last Day</h2>
+  <div class="tricolore"></div>
+  <div class="grid-2">
+    <div>
+      <div class="drive-box">
+        <h3>🚗 Venice &rarr; Milan</h3>
+        <div class="drive-stats">
+          <div class="drive-stat"><div class="num">270</div><div class="label">km</div></div>
+          <div class="drive-stat"><div class="num">3h</div><div class="label">drive</div></div>
+          <div class="drive-stat"><div class="num">~22</div><div class="label">EUR toll</div></div>
+        </div>
+        <p style="font-size:0.75em; margin-top:10px; opacity:0.9;">Optional: stop in <strong>Verona</strong> (on the route) - 1h walk: Arena, Piazza delle Erbe, espresso.</p>
+        <p class="tiny" style="opacity:0.7;"><a href="https://www.google.com/maps/dir/Venice/Milan" target="_blank" style="color:white;">Google Maps &rarr;</a></p>
+      </div>
+      <table class="schedule">
+        <tr><td>07:30</td><td>☕ Morning Venice - Rialto fish market, cornetto + caffe</td></tr>
+        <tr><td>10:00</td><td>🚗 Get car, leave Venice</td></tr>
+        <tr><td>10:30</td><td>🚗 Drive to Milan (opt. Verona stop)</td></tr>
+        <tr><td>13:00</td><td>🍝 Lunch in Milan - LAST MEAL</td></tr>
+        <tr><td>14:00</td><td>🏛 Duomo, Galleria, Navigli</td></tr>
+        <tr><td>16:00</td><td>🍦 Gelato at Artico</td></tr>
+        <tr><td>17:00</td><td>🚗 Drive to MXP, return car</td></tr>
+        <tr><td>20:00</td><td>✈ Flight</td></tr>
+      </table>
+    </div>
+    <div>
+      <h3>🍝 Last Italian Meal (make it count)</h3>
+      <div class="place"><div class="place-icon">🍝</div><div class="place-info"><div class="place-name">Trattoria Milanese dal 1933 <span class="place-price">~30-40 EUR/pp</span> <span class="place-tag">INSTITUTION</span></div><div class="place-detail">Near Duomo. Tight tables, timeless. <strong>Risotto alla milanese + ossobuco + cotoletta.</strong>
+        <br><a href="https://www.google.com/maps/search/Trattoria+Milanese+dal+1933" target="_blank">Maps</a></div></div></div>
+      <div class="place"><div class="place-icon">🍝</div><div class="place-info"><div class="place-name">Antica Trattoria della Pesa <span class="place-price">~30-40 EUR/pp</span></div><div class="place-detail">Since 1880. Cotoletta in clarified butter. Risotto, ossobuco.
+        <br><a href="https://www.google.com/maps/search/Antica+Trattoria+della+Pesa+Milan" target="_blank">Maps</a></div></div></div>
+      <div class="place"><div class="place-icon">🍝</div><div class="place-info"><div class="place-name">Madonnina <span class="place-price">~25-35 EUR/pp</span></div><div class="place-detail">Daily menu. Mastered the holy trinity.
+        <br><a href="https://www.google.com/maps/search/Madonnina+ristorante+Milan" target="_blank">Maps</a></div></div></div>
+      <h3>🍦 Gelato</h3>
+      <div class="place"><div class="place-icon">🍦</div><div class="place-info"><div class="place-name">Artico <span class="place-tag">BEST IN MILAN</span></div><div class="place-detail">Pistacchio salato is legendary. 3 Coni Gambero Rosso. <a href="https://www.google.com/maps/search/Artico+Gelateria+Milan" target="_blank">Maps</a></div></div></div>
+      <h3>🌙 Aperitivo</h3>
+      <div class="card"><span class="tiny"><strong>Navigli</strong> - buy a drink (~8-10 EUR), get free buffet. The Milan ritual. Whole canal is bars.</span></div>
+    </div>
+  </div>
+</section>
+</section>
+
+</div>
+</div>
+
+<!-- Image modal -->
+<div class="img-modal" id="imgModal">
+  <img id="imgModalSrc" src="" alt="">
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+<script>
+Reveal.initialize({
+  hash: true,
+  width: '100%',
+  height: '100%',
+  margin: 0,
+  minScale: 1,
+  maxScale: 1,
+  transition: 'slide',
+  backgroundTransition: 'fade',
+  center: false,
+  controlsTutorial: true,
+  slideNumber: 'c/t',
+  embedded: false,
+  plugins: []
+});
+
+// Image modal - click to open, click/tap to close
+const modal = document.getElementById('imgModal');
+const modalImg = document.getElementById('imgModalSrc');
+
+document.addEventListener('click', function(e) {
+  const img = e.target.closest('.img-card img, .food-item img');
+  if (img) {
+    e.stopPropagation();
+    modalImg.src = img.src;
+    modal.classList.add('active');
+  }
+});
+
+modal.addEventListener('click', function() {
+  modal.classList.remove('active');
+  modalImg.src = '';
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && modal.classList.contains('active')) {
+    modal.classList.remove('active');
+    modalImg.src = '';
+  }
+});
+</script>
+</body>
+</html>
