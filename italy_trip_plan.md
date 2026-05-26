@@ -303,36 +303,65 @@ OR eat at Ponale Alto Belvedere during the hike
 
 ---
 
-## Day 5 (Thursday) - Brenta Dolomites Hike + Lago di Tovel
+## Day 5 (Thursday) - Brenta Dolomites + Tovel (A/B Plans)
 
 ### Driving
-- **Molveno -> Lago di Tovel:** 30 km, ~30 min (afternoon side trip)
-- **When:** Hike in the morning, Tovel in the afternoon. No rush today!
-- This is the RELAXED Dolomite day - tomorrow is the big drive
+- **Molveno ↔ Tovel:** 30 km, ~30 min (afternoon side trip)
+- **When:** No rush. Chill day before Day 6 drive.
 
-### DAY HIKE #2: Rifugio Croz dell'Altissimo (Brenta Dolomites)
+**A/B fork:** Legs pushed (big hike) or legs saved (chill cabinovia + lake day).
+
+### Plan A — Big hike: Rifugio Croz dell'Altissimo
+
+| Time | Activity |
+|------|----------|
+| 08:00 | Cabinovia up to Pradel |
+| 08:30 | Hike to Rifugio Croz dell'Altissimo (3h RT, +400m, medium) |
+| 11:30 | Lunch at rifugio (canederli, polenta, strudel) |
+| 12:30 | Hike back down to Pradel |
+| 13:30 | Cabinovia down |
+| 14:00 | Chill at Molveno lake |
+| 15:00 | Drive to Lago di Tovel (30 min) |
+| 15:30 | Walk around Tovel (4 km loop, flat, 1.5h) |
+| 17:30 | Drive back to Molveno |
+| 18:00 | Free time, beach |
+| 20:00 | Dinner |
+
+**Trade-off:** Real Brenta hike. Forest into heart of the Dolomites. Rifugio lunch is the moment. Day 6 has long drive — legs feel it tomorrow.
+
+### Plan B — Chill: Pradel altopiano + lake day
+
+| Time | Activity |
+|------|----------|
+| 09:00 | Cabinovia up to Pradel |
+| 09:30 | **Sentiero di Sciury** easy forest loop (2.5 km, 1h) |
+| 10:30 | Walk to **Rifugio La Montanara** (25 min from cabinovia top) |
+| 11:30 | Light lunch at Rifugio La Montanara — Dolomite views |
+| 13:00 | Cabinovia down |
+| 13:30 | Drive to Lago di Tovel |
+| 14:00 | Walk around Tovel (4 km loop, 1.5h) |
+| 15:30 | Back to Molveno |
+| 16:00 | Molveno lake beach + swim (5 Vele beach!) |
+| 17:00 | Optional: rent canoa / pedalò |
+| 18:30 | Aperitivo lakefront |
+| 20:00 | Dinner |
+
+**Trade-off:** Save legs for Day 6 drive + Braies walk. Still get Pradel altopiano (cabinovia does heavy lifting). More Molveno lake time. Tovel still in.
+
+### Day Hike #2 (Plan A): Rifugio Croz dell'Altissimo
 | | |
 |-|-|
-| **Start** | Pradel (take cabinovia from Molveno center) |
-| **Distance** | ~6 km round trip from Pradel |
-| **Time** | ~3h round trip |
+| **Start** | Pradel (cabinovia from Molveno center) |
+| **Distance** | ~6 km round trip |
+| **Time** | ~3h |
 | **Elevation** | +400m from cable car station |
 | **Difficulty** | Medium |
-| **What** | Forest paths opening into the heart of the Brenta Dolomites. Dramatic rock walls towering above. Rifugio at 1430m serves canederli + strudel with Dolomite panorama |
-| **Tip** | Cable car does the heavy lifting (first 800m!). Eat lunch at the rifugio. Bring a layer - it's cooler up there |
+| **What** | Forest paths opening into Brenta. Rifugio at 1430m serves canederli + strudel |
+| **Tip** | Cable car does first 800m. Eat lunch at rifugio. Bring a layer |
 
-### What to Do (~9h of free time - the chill day)
-| Time | Activity | Duration |
-|------|----------|----------|
-| 08:00-08:30 | Cabinovia up to Pradel | 30 min |
-| 08:30-12:00 | **Hike to Rifugio Croz dell'Altissimo** + lunch at rifugio | 3.5h |
-| 12:00-12:30 | Cabinovia down | 30 min |
-| 13:00-14:00 | Chill / rest at Molveno lake | 1h |
-| 14:30-15:00 | Drive to **Lago di Tovel** | 30 min |
-| 15:00-17:00 | Walk around Tovel (4 km loop, flat, ~1.5h) + relax by the lake | 2h |
-| 17:00-17:30 | Drive back to Molveno | 30 min |
-| 18:00-20:00 | Free time, beach, evening walk | 2h |
-| 20:00 | Dinner | - |
+### Plan B easy walks
+- **Sentiero di Sciury** — 2.5 km easy loop, kid-friendly didactic trail, ~1h
+- **Rifugio La Montanara** — 25 min walk from cabinovia top. Symbol rifugio of Pradel
 
 ### Where to Eat
 
@@ -355,29 +384,47 @@ OR eat at Ponale Alto Belvedere during the hike
 
 ---
 
-## Day 6 (Friday) - Molveno -> Pragser Wildsee (Dolomites)
+## Day 6 (Friday) - Molveno -> Lago di Braies (A/B Plans)
 
 ### Driving
 - **Molveno -> Pragser Wildsee:** 130 km, ~2h
-- **When:** Morning drive, arrive Braies by ~11am
-- **Scenic route:** Through **Val di Non -> Val di Sole -> Val Pusteria**. All mountain roads, every turn is a Dolomite postcard. Fill up gas before leaving Molveno!
+- **Scenic route:** Val di Non -> Val di Sole -> Val Pusteria. All mountain roads. Fill up gas before leaving!
 
 ### Driving Tips for Dolomites
 - Use **engine braking** on descents - save brake pads
 - Watch for cyclists and motorcyclists - everywhere
-- Fill up gas BEFORE mountain roads - stations sparse
 - End of May = road to Braies is **OPEN** (restrictions only Jul 10 - Sep 10)
 
-### What to Do (~7h of free time)
-| Time | Activity | Duration |
-|------|----------|----------|
-| 08:30-10:30 | Scenic drive Molveno -> Val Pusteria | 2h |
-| 11:00-12:30 | **Pragser Wildsee / Lago di Braies** - walk the loop (3.5 km, 1.5h) | 1.5h |
-| 12:30-13:00 | Rent a rowing boat on the lake | 30 min |
-| 13:00-14:00 | Lunch near the lake | 1h |
-| 14:30-17:00 | Explore **Val Pusteria villages** - Dobbiaco, Monguelfo, Villabassa | 2.5h |
-| 17:00-18:00 | Drive to accommodation, settle in | 1h |
-| 19:00 | Dinner | - |
+**A/B fork:** Chill Braies + villages, or push for Tre Cime iconic shot.
+
+### Plan A — Braies + Val Pusteria villages
+| Time | Activity |
+|------|----------|
+| 08:30 | Scenic drive through Dolomites (2h) |
+| 10:30 | Lago di Braies loop (3.5 km, 1.5h) |
+| 12:00 | Rent rowing boat on the lake (30 min) |
+| 12:30 | Lunch near the lake or Gasthaus |
+| 14:30 | Explore Val Pusteria villages — Dobbiaco, Monguelfo, Villabassa |
+| 17:00 | Check in at maso, decompress |
+| 19:00 | Dinner at Gasthaus |
+
+**Trade-off:** Chill. Less driving. Time to soak in Braies + village life. Best if Day 5 was Plan A (big hike).
+
+### Plan B — Braies + Tre Cime detour
+| Time | Activity |
+|------|----------|
+| 08:30 | Scenic drive Molveno → Braies (2h) |
+| 10:30 | Lago di Braies loop (3.5 km, 1.5h) |
+| 12:00 | Quick Gasthaus lunch near Braies (1h) |
+| 13:00 | Drive to **Lago di Misurina** (~1h) |
+| 14:00 | Walk around Misurina (3 km, 30 min) — Tre Cime visible from shore |
+| 14:30 | Up toll road to **Rifugio Auronzo** — 40 EUR/car |
+| 15:00 | Walk first stretch of Tre Cime loop (~1h, panorama at Rifugio Lavaredo) |
+| 16:00 | Drive back to Val Pusteria (~1h15) |
+| 17:30 | Check in at maso |
+| 19:30 | Dinner at Gasthaus |
+
+**Trade-off:** Tre Cime = iconic Dolomite shot. +2h driving total. Toll road 40 EUR/car. **Verify last departures (~18:00) at drei-zinnen.bz before going.** Distance Braies → Tre Cime is 42 km / 49 min.
 
 **Braies lake walk details:**
 - 3.5 km loop, ~1.5h, easy
@@ -423,25 +470,41 @@ OR eat at Ponale Alto Belvedere during the hike
 
 ---
 
-## Day 7 (Saturday) - Dolomites -> Venice
+## Day 7 (Saturday) - Dolomites -> Venice (A/B Plans)
 
 ### Driving
-- **Val Pusteria -> Lago di Santa Croce:** 120 km, ~2h
-- **Santa Croce -> Venice (Mestre):** 90 km, ~1.5h
-- **Total driving:** ~3.5h
-- **When:** Leave after Hanslerhof breakfast (don't rush it - that breakfast is worth it), Santa Croce swim ~11am, Venice by early afternoon
-- **Scenic route:** South through **Dolomite foothills via Belluno** - alpine peaks transition to rolling hills to Veneto plain
+- **Val Pusteria -> Venice:** 210 km, ~3.5h
+- **Scenic route:** South through Dolomite foothills via Belluno - alpine peaks → rolling hills → Veneto plain
 
-### What to Do
-| Time | Activity | Duration |
-|------|----------|----------|
-| 08:00-09:00 | Epic Tyrolean breakfast at the maso | 1h |
-| 09:00-11:00 | Drive Val Pusteria -> Lago di Santa Croce | 2h |
-| 11:00-12:00 | **Lago di Santa Croce** - swim stop, stretch legs | 1h |
-| 12:00-13:30 | Drive to Venice, park car | 1.5h |
-| 14:00-15:00 | Lunch in Venice | 1h |
-| 15:00-19:00 | Wander: Dorsoduro, San Marco, Rialto, get lost | 4h |
-| 19:30-22:00 | **Bacaro tour** through Cannaregio | 2.5h |
+**A/B fork:** Direct push for max Venice time, or Cortina coffee stop en route.
+
+### Plan A — Push to Venice, long evening
+| Time | Activity |
+|------|----------|
+| 08:00 | Epic Tyrolean breakfast at maso |
+| 09:00 | Drive south |
+| 11:00 | Lago di Santa Croce swim stop (1h) |
+| 12:00 | Continue to Venice |
+| 13:30 | Park (Mestre), train to Venice |
+| 14:00 | Lunch in Venice |
+| 15:00 | Wander Dorsoduro, San Marco, Rialto (4h) |
+| 19:30 | Bacaro tour Cannaregio |
+
+**Trade-off:** Maximum Venice time. Santa Croce = quick leg-stretch. Direct.
+
+### Plan B — Cortina coffee stop
+| Time | Activity |
+|------|----------|
+| 08:00 | Epic Tyrolean breakfast at maso |
+| 09:00 | Drive Val Pusteria → **Cortina d'Ampezzo** (~1h) |
+| 10:00 | Espresso + Corso Italia stroll. Basilica, Piazza Roma (1h) |
+| 11:00 | Cortina → Venice (~2.5h via Belluno) |
+| 13:30 | Park Mestre, train to Venice |
+| 14:30 | Lunch in Venice |
+| 15:30 | Wander Dorsoduro + San Marco (3.5h) |
+| 19:30 | Bacaro tour Cannaregio |
+
+**Trade-off:** Cortina = chic Dolomites mountain town (Olympic host). Worth espresso on Corso Italia. Skip Santa Croce swim.
 
 **Parking strategy:**
 - **Best value:** Park in **Mestre** (5-15 EUR/day) + train to Venezia Santa Lucia (10 min, ~2 EUR)
@@ -496,24 +559,47 @@ OR eat at Ponale Alto Belvedere during the hike
 
 ---
 
-## Day 8 (Sunday Jun 7) - Venice Morning -> Milan
+## Day 8 (Sunday Jun 7) - Venice -> Milan -> Flight (A/B Plans)
 
 ### Driving
 - **Venice -> Milan:** 270 km, ~3h (A4 autostrada)
 - **Tolls:** ~22.40 EUR
-- **When:** Leave Venice ~10am, arrive Milan ~1pm
-- **Optional stop:** **Verona** (directly on route) - 1h walk: Arena, Piazza delle Erbe, espresso
+- **Flight:** MXP 20:00
 
-### What to Do
-| Time | Activity | Duration |
-|------|----------|----------|
-| 07:30-09:30 | Morning walk in Venice - Rialto fish market (early!), cornetto + caffe, last wander | 2h |
-| 10:00-10:30 | Get car, leave Venice | 30 min |
-| 10:30-13:00 | Drive to Milan (optional Verona stop ~1h) | 2.5-3h |
-| 13:00-14:00 | Lunch in Milan | 1h |
-| 14:00-16:30 | Walk: Duomo, Galleria Vittorio Emanuele, Navigli | 2.5h |
-| 17:00 | Drive to MXP, return car | - |
-| 20:00 | Flight | - |
+**A/B fork:** Long Venice morning, or Verona detour.
+
+### Plan A — Long Venice morning
+| Time | Activity |
+|------|----------|
+| 07:00 | Cornetto + caffè |
+| 07:30 | **Rialto fish market** (early!) |
+| 09:00 | Last Venice wander — quiet morning streets |
+| 11:00 | Get car at Mestre, leave for Milan |
+| 14:00 | Lunch in Milan — Trattoria Milanese dal 1933 or Antica Trattoria della Pesa |
+| 15:30 | Duomo + Galleria Vittorio Emanuele (1h) |
+| 16:30 | Gelato at Artico |
+| 17:00 | Drive to MXP (~50 min) |
+| 18:00 | Check in, return car |
+| 20:00 | Flight |
+
+**Trade-off:** Full Venice morning. Rialto market at dawn = magic. Milan = lunch + quick walk only.
+
+### Plan B — Verona detour
+| Time | Activity |
+|------|----------|
+| 07:30 | Quick cornetto + caffè |
+| 08:30 | Get car at Mestre, drive to **Verona** (~1.5h) |
+| 10:00 | Piazza Bra + Arena (40 min) |
+| 10:45 | Via Mazzini → Casa di Giulietta (45 min) |
+| 11:30 | Piazza delle Erbe + Arche Scaligere (45 min) |
+| 12:30 | Lunch in Verona |
+| 14:00 | Verona → Milan (~1.5h) |
+| 15:30 | Quick Duomo + Galleria stop |
+| 16:30 | Gelato at Artico |
+| 17:00 | Drive to MXP |
+| 20:00 | Flight |
+
+**Trade-off:** Adds Verona (Arena, Romeo + Giulietta, Piazza delle Erbe). Skip slow Venice morning. Three Italian cities in one day = packed.
 
 ### Where to Eat
 
@@ -614,7 +700,6 @@ OR eat at Ponale Alto Belvedere during the hike
 |------|-------|------------|
 | Autostrada tolls | ~80-100 EUR | ~40-50 |
 | Gas (~990 km) | ~120 EUR | ~60 |
-| Isola del Garda tour | ~80-100 EUR | ~40-50 |
 | Venice parking (1 day Mestre) | ~10-15 EUR | ~5-8 |
 | Borromean Islands ferry | ~30-40 EUR | ~15-20 |
 | Cable cars (Sasso del Ferro, Molveno x2) | ~40-50 EUR | ~20-25 |
@@ -675,7 +760,6 @@ RAIN BACKUP: Villa Carlotta Tremezzina, Terme di Sirmione, MMM Messner Mountain 
 ### Activities
 - [Sentiero del Ponale](https://www.gardatrentino.it/en/activity/ponale-path-from-riva-del-garda-_8214)
 - [Brenta Dolomites from Molveno](https://www.trentino.com/en/leisure-activities/mountains-and-hiking/hiking-in-summer/from-molveno-to-the-brenta-dolomites/)
-- [Isola del Garda](https://www.isoladelgarda.com/en/guided-tours)
 - [Borromean Islands](https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-maggiore/)
 - [Strada della Forra](https://viaggidialegio.it/idee-di-viaggio/la-strada-della-forra-il-percorso-panoramico-piu-bello-del-mondo/)
 - [Limone bike path](https://soloviaggiumili.it/pista-ciclabile-sul-lago-di-garda-unesperienza-unica-a-limone/)
