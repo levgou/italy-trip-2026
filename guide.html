@@ -126,6 +126,42 @@
     font-style: italic;
   }
 
+  /* Image placeholder */
+  .img-missing {
+    background: repeating-linear-gradient(
+      45deg,
+      #f4ede0,
+      #f4ede0 8px,
+      #ebe2d0 8px,
+      #ebe2d0 16px
+    );
+    border: 2px dashed #c0b29a;
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+    color: #8a7a5e;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .img-missing::before {
+    content: '📷 ';
+  }
+
+  /* Plan badge on cards */
+  .plan-badge {
+    display: inline-block;
+    background: var(--red);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .plan-badge.b { background: var(--green); }
+
   /* Day section */
   .day {
     margin-bottom: 40px;
@@ -821,9 +857,9 @@
   <div class="day-hero" style="background-image: url('img/hero-garda.jpg');">
     <span class="day-badge">DAY 3 · TUE JUN 2</span>
     <h2>Lake Garda</h2>
-    <div class="sub">Sirmione · Isola del Garda</div>
+    <div class="sub">Sirmione · Monte Baldo OR Thermal Swim</div>
     <div class="day-stats">
-      <span><strong>2h</strong>driving</span>
+      <span><strong>2-3h</strong>driving</span>
       <span><strong>100 km</strong>Como → Sirmione</span>
       <span><strong>~7h</strong>free roam</span>
     </div>
@@ -835,17 +871,18 @@
       <h3>Como → Sirmione</h3>
       <div class="stats">
         <span><strong>100</strong>km</span>
-        <span><strong>2h</strong>drive</span>
+        <span><strong>2.5h</strong>drive</span>
         <span><strong>10:00</strong>depart</span>
       </div>
-      <div class="note">🛣 A4 autostrada — save scenic energy for Strada della Forra tomorrow.</div>
+      <div class="note">🛣 Via Bergamo/Brescia. Save scenic energy for Strada della Forra tomorrow.</div>
       <a href="https://www.google.com/maps/dir/Como/Sirmione" target="_blank">Open in Google Maps →</a>
     </div>
 
     <h3>🗓 Schedule — Pick A or B</h3>
+    <p style="font-size:13px; color:#666; margin-bottom:8px;">Lunch in Sirmione for both. A/B forks afternoon.</p>
     <div class="ab-toggle" data-day="3">
-      <button class="active" data-plan="A">Plan A<span class="label">Long lunch Sirmione</span></button>
-      <button data-plan="B">Plan B<span class="label">Lunch Desenzano</span></button>
+      <button class="active" data-plan="A">Plan A<span class="label">Monte Baldo wow</span></button>
+      <button data-plan="B">Plan B<span class="label">Sirmione + thermal swim</span></button>
     </div>
 
     <div class="plan active" data-day="3" data-plan="A">
@@ -853,56 +890,86 @@
         <div class="row"><div class="time">08:30</div><div>Breakfast</div></div>
         <div class="row"><div class="time">10:00</div><div>🚗 Depart Como (2.5h via Bergamo/Brescia)</div></div>
         <div class="row"><div class="time">12:30</div><div>Arrive Sirmione, park outside gates</div></div>
-        <div class="row"><div class="time">13:00</div><div>🍝 <strong>Seated lunch</strong> Sirmione old town (90 min)</div></div>
-        <div class="row"><div class="time">14:30</div><div>Wander Sirmione (Scaliger Castle exterior, narrow streets)</div></div>
-        <div class="row"><div class="time">15:00</div><div>🏛 <strong>Grotte di Catullo</strong> Roman ruins (1h)</div></div>
-        <div class="row"><div class="time">16:00</div><div>Walk back, coffee/granita</div></div>
-        <div class="row"><div class="time">16:30</div><div>🚗 Drive to Isola del Garda pier</div></div>
-        <div class="row"><div class="time">17:00</div><div>🏝 <strong>Isola del Garda tour</strong> (~2.5h)</div></div>
-        <div class="row"><div class="time">20:30</div><div>🥗 Light dinner near hotel</div></div>
+        <div class="row"><div class="time">13:00</div><div>🍝 <strong>Seated lunch</strong> Sirmione old town (90 min) — La Speranzina or Trattoria La Rucola</div></div>
+        <div class="row"><div class="time">14:30</div><div>Quick Sirmione wander — Scaliger Castle exterior (30 min)</div></div>
+        <div class="row"><div class="time">15:00</div><div>🚗 Drive Sirmione → Malcesine (~50 min, east shore)</div></div>
+        <div class="row"><div class="time">16:00</div><div>🚡 <strong>Monte Baldo</strong> rotating cable car up</div></div>
+        <div class="row"><div class="time">16:20</div><div>Top 1760m — panorama walk, ridge trails, Dolomites visible</div></div>
+        <div class="row"><div class="time">17:45</div><div>🚡 Cable car down</div></div>
+        <div class="row"><div class="time">18:15</div><div>Wander Malcesine old town (lakefront castle)</div></div>
+        <div class="row"><div class="time">19:00</div><div>🚗 Drive back toward hotel (~30-50 min)</div></div>
+        <div class="row"><div class="time">20:30</div><div>🍷 Dinner near hotel</div></div>
       </div>
-      <div class="plan-tradeoff"><strong>Trade-off:</strong> Sirmione all day — *the* postcard, long lunch lakeside. Touristy at peak, prices reflect.</div>
+      <div class="plan-tradeoff"><strong>Trade-off:</strong> Skip Grotte di Catullo. Monte Baldo views = unique-to-Garda. <strong>Verify last cable car down (usually 18:00-18:30)</strong> at funiviedelbaldo.it before going.</div>
     </div>
 
     <div class="plan" data-day="3" data-plan="B">
       <div class="schedule">
         <div class="row"><div class="time">08:30</div><div>Breakfast</div></div>
         <div class="row"><div class="time">10:00</div><div>🚗 Depart Como (2.5h drive)</div></div>
-        <div class="row"><div class="time">12:30</div><div>🚗 Detour to <strong>Desenzano del Garda</strong> (15 min south of Sirmione)</div></div>
-        <div class="row"><div class="time">13:00</div><div>🍝 <strong>Seated lunch</strong> Desenzano (90 min) — less touristy, locals' lakefront</div></div>
-        <div class="row"><div class="time">14:45</div><div>🚗 Drive Desenzano → Sirmione (15 min)</div></div>
-        <div class="row"><div class="time">15:00</div><div>🏛 Sirmione old town + Grotte di Catullo (2h)</div></div>
-        <div class="row"><div class="time">16:30</div><div>🚗 Drive to Isola del Garda pier</div></div>
-        <div class="row"><div class="time">17:00</div><div>🏝 <strong>Isola del Garda tour</strong> (~2.5h)</div></div>
+        <div class="row"><div class="time">12:30</div><div>Arrive Sirmione, park outside gates</div></div>
+        <div class="row"><div class="time">13:00</div><div>🍝 <strong>Seated lunch</strong> Sirmione old town (90 min)</div></div>
+        <div class="row"><div class="time">14:30</div><div>Wander old town, Scaliger Castle exterior</div></div>
+        <div class="row"><div class="time">15:00</div><div>🏛 Walk peninsula tip — <strong>Grotte di Catullo</strong> Roman ruins (1h)</div></div>
+        <div class="row"><div class="time">16:00</div><div>🏖 <strong>Jamaica Beach</strong> next to Grotte — swim, thermal bubbles from underwater springs, castle views (1.5h)</div></div>
+        <div class="row"><div class="time">17:30</div><div>Walk back through old town, granita, gelato</div></div>
+        <div class="row"><div class="time">18:30</div><div>Optional: 🧖 <strong>Aquaria Spa</strong> thermal pools (book ahead) OR hotel decompress</div></div>
         <div class="row"><div class="time">20:30</div><div>🍷 <strong>Proper dinner</strong> Sirmione old town</div></div>
       </div>
-      <div class="plan-tradeoff"><strong>Trade-off:</strong> Desenzano = where locals eat. Better value. Sirmione mid-afternoon less crowded.</div>
+      <div class="plan-tradeoff"><strong>Trade-off:</strong> No big drive after morning transfer, slower pace. Thermal element subtle — Jamaica Beach free + casual, Aquaria upscale version.</div>
     </div>
 
-    <h3>🏝 Isola del Garda</h3>
-    <div class="card red">
-      <div class="img-strip"><img src="img/isola-garda.jpg" alt="Isola del Garda"></div>
-      <div class="title">🏝 Isola del Garda <span class="price">39–49 EUR/pp</span> <span class="tag">BOOK AHEAD</span></div>
-      <div class="desc">Neo-Gothic villa + gardens + wine tasting + olive oil DOP. ~2.5h. <strong>Closed Mondays!</strong> Boat from Sirmione ~30 min. <a href="https://www.isoladelgarda.com/en/guided-tours" target="_blank">Book here</a> · <a href="https://www.google.com/maps/search/Isola+del+Garda" target="_blank">Maps →</a></div>
-    </div>
-    <div class="alert"><strong>📌 Booking note</strong> Isola pier varies by day. Book Tue Jun 2, check port. Aim later slot (~16:30) if offered.</div>
-
-    <h3>🍝 Where to Eat</h3>
+    <h3>🚡 Activities — Plan A territory <span class="plan-badge">PLAN A</span></h3>
     <div class="card">
-      <div class="title">🍝 Trattoria Clementina (Sirmione) <span class="price">~25–35 EUR/pp</span></div>
+      <div class="img-missing">Monte Baldo summit panorama — need photo</div>
+      <div class="title">🚡 Monte Baldo Cable Car</div>
+      <div class="desc">Rotating cable car from Malcesine → 1760m. Ridge trails, Dolomites visible north. Check last departure (~18:00-18:30) at funiviedelbaldo.it. <a href="https://www.google.com/maps/search/Funivia+Malcesine+Monte+Baldo" target="_blank">Maps →</a></div>
+    </div>
+    <div class="card">
+      <div class="img-missing">Malcesine old town + lakefront castle — need photo</div>
+      <div class="title">🏰 Malcesine Old Town</div>
+      <div class="desc">Lovely lakefront castle, narrow streets. Quick wander after cable car. <a href="https://www.google.com/maps/search/Malcesine" target="_blank">Maps →</a></div>
+    </div>
+
+    <h3>🏛 Activities — Plan B territory <span class="plan-badge b">PLAN B</span></h3>
+    <div class="card">
+      <div class="img-missing">Grotte di Catullo Roman ruins — need photo</div>
+      <div class="title">🏛 Grotte di Catullo</div>
+      <div class="desc">Roman villa ruins at peninsula tip. ~1h walk-through. <a href="https://www.google.com/maps/search/Grotte+di+Catullo" target="_blank">Maps →</a></div>
+    </div>
+    <div class="card">
+      <div class="img-missing">Jamaica Beach Sirmione — need photo</div>
+      <div class="title">🏖 Jamaica Beach <span class="price">Free</span></div>
+      <div class="desc">Flat rocks next to Grotte. Thermal bubbles from underwater springs. Castle views. Locals' favorite. <a href="https://www.google.com/maps/search/Jamaica+Beach+Sirmione" target="_blank">Maps →</a></div>
+    </div>
+    <div class="card">
+      <div class="img-missing">Aquaria Spa thermal pools — need photo</div>
+      <div class="title">🧖 Aquaria Thermal Spa <span class="price">~50-70 EUR</span></div>
+      <div class="desc">Upscale version of the thermal experience. Book ahead. Optional after Jamaica Beach. <a href="https://www.google.com/maps/search/Aquaria+Sirmione" target="_blank">Maps →</a></div>
+    </div>
+
+    <h3>🍝 Where to Eat (lunch in Sirmione — both plans)</h3>
+    <div class="card">
+      <div class="img-missing">La Speranzina Sirmione — need photo</div>
+      <div class="title">🍝 La Speranzina <span class="price">~40-60 EUR/pp</span></div>
+      <div class="desc">Sirmione old town. Upscale lake-fish kitchen. Recommended for Plan A seated lunch. <a href="https://www.google.com/maps/search/La+Speranzina+Sirmione" target="_blank">Maps →</a></div>
+    </div>
+    <div class="card">
+      <div class="img-missing">Trattoria La Rucola Sirmione — need photo</div>
+      <div class="title">🍝 Trattoria La Rucola <span class="price">~35-50 EUR/pp</span></div>
+      <div class="desc">Michelin-recognized. Refined trattoria in Sirmione old town. <a href="https://www.google.com/maps/search/Trattoria+La+Rucola+Sirmione" target="_blank">Maps →</a></div>
+    </div>
+    <div class="card">
+      <div class="title">🍝 Trattoria Clementina <span class="price">~25-35 EUR/pp</span></div>
       <div class="desc">Authentic with courtyard. Zero tourist BS. Local lake fish. Piazza Rovizzi. <a href="https://www.google.com/maps/search/Trattoria+Clementina+Sirmione" target="_blank">Maps →</a></div>
     </div>
     <div class="card">
-      <div class="title">🍷 Osteria del Vecchio Fossato (Sirmione) <span class="price">~25–35 EUR/pp</span></div>
+      <div class="title">🍷 Osteria del Vecchio Fossato <span class="price">~25-35 EUR/pp</span></div>
       <div class="desc">Hidden in old walls, intimate. Tagliatelle with trout, aole sale. Via Antiche Mura 16. <a href="https://www.google.com/maps/search/Osteria+Vecchio+Fossato+Sirmione" target="_blank">Maps →</a></div>
     </div>
     <div class="card">
-      <div class="title">🍽 Casa dei Pescatori (Sirmione) <span class="price">~30–40 EUR/pp</span></div>
+      <div class="title">🍽 Casa dei Pescatori <span class="price">~30-40 EUR/pp</span></div>
       <div class="desc">ON the water near Castello. Lake fish, organic/seasonal. <a href="https://www.google.com/maps/search/Casa+dei+Pescatori+Sirmione" target="_blank">Maps →</a></div>
-    </div>
-    <div class="card">
-      <div class="title">🍝 Trattoria Da Renato (Desenzano) <span class="price">~20–30 EUR/pp</span></div>
-      <div class="desc">Family place. Good prices. Fish + meat. Via Gramsci 61. <a href="https://www.google.com/maps/search/Trattoria+Da+Renato+Desenzano" target="_blank">Maps →</a></div>
     </div>
     <div class="card gold">
       <div class="title">Must Try: Bigoli con le sarde del Garda <span class="tag">THE DISH</span></div>
@@ -915,7 +982,7 @@
         <img src="img/la-filanda-1.jpg" alt="La Filanda">
         <img src="img/la-filanda-2.jpg" alt="La Filanda 2">
       </div>
-      <div class="title">🌾 Agriturismo La Filanda <span class="price">~80–120 EUR</span></div>
+      <div class="title">🌾 Agriturismo La Filanda <span class="price">~80-120 EUR</span></div>
       <div class="desc">Historic 1800s farmhouse on Garda shores. Pool. <a href="https://www.google.com/maps/search/Agriturismo+La+Filanda+Garda" target="_blank">Maps →</a></div>
     </div>
     <div class="card">
@@ -923,7 +990,7 @@
         <img src="img/bb-beatrice-1.jpg" alt="Beatrice">
         <img src="img/bb-beatrice-2.jpg" alt="Beatrice 2">
       </div>
-      <div class="title">🛏 B&B da Beatrice <span class="price">~70–90 EUR</span></div>
+      <div class="title">🛏 B&B da Beatrice <span class="price">~70-90 EUR</span></div>
       <div class="desc">Garden + pool. Quiet. 2km from Sirmione center. <a href="https://www.google.com/maps/search/B%26B+da+Beatrice+Sirmione" target="_blank">Maps →</a></div>
     </div>
     <div class="card">
@@ -931,16 +998,16 @@
         <img src="img/il-ghetto-1.jpg" alt="Il Ghetto">
         <img src="img/il-ghetto-2.jpg" alt="Il Ghetto 2">
       </div>
-      <div class="title">🌾 Agriturismo Il Ghetto <span class="price">~70–100 EUR</span></div>
+      <div class="title">🌾 Agriturismo Il Ghetto <span class="price">~70-100 EUR</span></div>
       <div class="desc">Countryside 1.2km from lake. Rustic vibe. <a href="https://www.google.com/maps/search/Agriturismo+Il+Ghetto+Garda" target="_blank">Maps →</a></div>
     </div>
 
     <h3>🏖 · 🌙 · ☂</h3>
     <div class="card">
       <div class="desc">
-        <strong>🏖 Swim:</strong> <strong>Lido delle Bionde</strong> (thermal spring water mixes in — warmer!) · <strong>Jamaica Beach</strong> (flat rocks, locals).<br><br>
-        <strong>🌙 Nightlife:</strong> <strong>Desenzano</strong> = THE Garda nightlife hub. Bars, live music, clubs until 2am.<br><br>
-        <strong>☂ Rain:</strong> <strong>Terme di Sirmione</strong> — thermal spa day. Indoor pools + treatments.
+        <strong>🏖 Swim:</strong> <strong>Lido delle Bionde</strong> (thermal spring water mixes in — warmer!) · <strong>Jamaica Beach</strong> (Plan B anchor).<br><br>
+        <strong>🌙 Nightlife:</strong> <strong>Desenzano</strong> = THE Garda nightlife hub. Bars, live music, clubs until 2am. 15 min from Sirmione.<br><br>
+        <strong>☂ Rain:</strong> <strong>Terme di Sirmione</strong> or <strong>Aquaria</strong> — thermal spa. Indoor pools + treatments.
       </div>
     </div>
   </div>

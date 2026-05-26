@@ -13,7 +13,6 @@
 
 | What | Where to Book | Cost | Notes |
 |------|--------------|------|-------|
-| Isola del Garda tour | [isoladelgarda.com](https://www.isoladelgarda.com/en/guided-tours) | 39-49 EUR/pp | Closed Mondays! Book for Tue Jun 2 |
 | Venice parking | [parclick.it](https://parclick.it/parcheggio-venezia) | 5-15 EUR/day (Mestre) | Pre-book to guarantee spot |
 | Borromean Islands ferry | [navigazionelaghi.it](https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-maggiore/) | Check site | Every 30 min, 9:00-18:00 |
 | ~~Pragser Wildsee parking~~ | ~~prags.bz~~ | -- | **NOT NEEDED** - end of May, road is open! |
@@ -147,28 +146,50 @@
 
 ---
 
-## Day 3 (Tuesday) - Como -> Lake Garda
+## Day 3 (Tuesday) - Como -> Sirmione (A/B Plans)
 
 ### Driving
-- **Como -> Sirmione:** 100 km, ~2h
-- **When:** Morning drive, arrive Sirmione by ~11am
-- **Scenic route:** Mostly A4 autostrada - save scenic energy for Strada della Forra tomorrow
+- **Como -> Sirmione:** 100 km, ~2.5h via Bergamo/Brescia
+- **When:** Morning drive
+- **Scenic route:** Save scenic energy for Strada della Forra tomorrow
 
-### What to Do (~7h of free time)
-| Time | Activity | Duration |
-|------|----------|----------|
-| 08:30-10:30 | Drive Como -> Sirmione | 2h |
-| 11:00-13:00 | Walk **Sirmione old town** + Castello Scaligero + Grotte di Catullo | 2h |
-| 13:00-14:00 | Lunch in Sirmione | 1h |
-| 14:30-17:00 | **Isola del Garda** guided tour (boat + villa + gardens + wine) | 2.5h |
-| 17:30-19:00 | Chill at accommodation, lakeside walk | 1.5h |
-| 20:00 | Dinner | - |
+**A/B fork:** Both plans lunch in Sirmione. Afternoon differs.
 
-**Isola del Garda:**
-- Closed Mondays, **Tuesday is perfect**
-- Boat from Sirmione ~30 min each way
-- Tour: neo-Gothic villa, gardens, wine tasting + olive oil DOP
-- ~39-49 EUR/pp, [isoladelgarda.com](https://www.isoladelgarda.com/en/guided-tours)
+### Plan A — Monte Baldo wow afternoon
+| Time | Activity |
+|------|----------|
+| 10:00 | Depart Como (2.5h) |
+| 12:30 | Arrive Sirmione, park outside gates |
+| 13:00 | Seated lunch Sirmione old town (90 min) — La Speranzina or Trattoria La Rucola |
+| 14:30 | Quick Sirmione wander — Scaliger Castle exterior (30 min) |
+| 15:00 | Drive Sirmione → Malcesine (~50 min, east shore) |
+| 16:00 | Monte Baldo rotating cable car up (1760m) |
+| 16:20 | Panorama walk, ridge trails, Dolomites visible |
+| 17:45 | Cable car down |
+| 18:15 | Wander Malcesine old town |
+| 19:00 | Drive back toward hotel (~30-50 min) |
+| 20:30 | Dinner near hotel |
+
+**Trade-off:** Skip Grotte di Catullo. Monte Baldo = unique-to-Garda. **Verify last cable car down (~18:00-18:30) at funiviedelbaldo.it.**
+
+### Plan B — Sirmione + thermal swim
+| Time | Activity |
+|------|----------|
+| 10:00 | Depart Como (2.5h) |
+| 12:30 | Arrive Sirmione, park outside gates |
+| 13:00 | Seated lunch Sirmione old town (90 min) |
+| 14:30 | Wander old town, Scaliger Castle exterior |
+| 15:00 | Grotte di Catullo Roman ruins at peninsula tip (1h) |
+| 16:00 | **Jamaica Beach** next to Grotte — swim, thermal bubbles from underwater springs, castle views (1.5h) |
+| 17:30 | Walk back through old town, granita, gelato |
+| 18:30 | Optional: Aquaria Spa thermal pools (book ahead). Otherwise hotel decompress. |
+| 20:30 | Proper dinner Sirmione old town |
+
+**Trade-off:** No big drive after morning. Slower pace. Thermal element subtle — Jamaica Beach free + casual, Aquaria upscale.
+
+### Removed
+- **Isola del Garda** — too touristy, guided-tour format doesn't fit trip vibe. Drops only mandatory advance booking too.
+- Desenzano lunch alternative — both plans now lunch in Sirmione.
 
 ### Where to Eat
 
