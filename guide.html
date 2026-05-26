@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Italy Guide — Mobile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #006341;
+    --red: #C8102E;
+    --cream: #F0EBE3;
+    --warm-gray: #E8E2D8;
+    --dark: #2C2C2C;
+    --gold: #C5A258;
+    --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  /* Sticky nav */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(240, 235, 227, 0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--warm-gray);
+    padding: 8px 0;
+  }
+  .nav-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 6px;
+    padding: 0 12px;
+    scrollbar-width: none;
+  }
+  .nav-scroll::-webkit-scrollbar { display: none; }
+  .nav a {
+    flex-shrink: 0;
+    padding: 6px 12px;
+    background: white;
+    border-radius: 16px;
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid var(--warm-gray);
+    white-space: nowrap;
+  }
+  .nav a:active {
+    background: var(--green);
+    color: white;
+  }
+
+  /* Tricolore accent */
+  .tricolore {
+    height: 3px;
+    background: linear-gradient(90deg, var(--green) 33%, white 33%, white 66%, var(--red) 66%);
+  }
+
+  /* A/B Toggle */
+  .ab-toggle {
+    display: flex;
+    gap: 6px;
+    margin: 12px 0;
+    background: var(--warm-gray);
+    padding: 4px;
+    border-radius: 10px;
+  }
+  .ab-toggle button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--dark);
+    cursor: pointer;
+  }
+  .ab-toggle button.active {
+    background: var(--green);
+    color: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  }
+  .ab-toggle button .label {
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    opacity: 0.85;
+    margin-top: 2px;
+  }
+  .plan {
+    display: none;
+  }
+  .plan.active {
+    display: block;
+  }
+  .plan-tradeoff {
+    background: var(--warm-gray);
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 13px;
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  /* Day section */
+  .day {
+    margin-bottom: 40px;
+  }
+  .day-hero {
+    position: relative;
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+  }
+  .day-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.7) 100%);
+  }
+  .day-hero > * {
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+  }
+  .day-badge {
+    display: inline-block;
+    background: var(--red);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-shadow: none;
+    align-self: flex-start;
+    margin-bottom: 8px;
+  }
+  .day-hero h2 {
+    font-size: 28px;
+    color: white;
+  }
+  .day-hero .sub {
+    font-size: 14px;
+    opacity: 0.95;
+    margin-top: 4px;
+  }
+  .day-stats {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+    font-size: 12px;
+    opacity: 0.95;
+  }
+  .day-stats span strong {
+    font-size: 16px;
+    display: block;
+  }
+
+  /* Content sections */
+  .section {
+    padding: 16px;
+  }
+  .section h3 {
+    font-size: 16px;
+    color: var(--green);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* Card */
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    box-shadow: var(--shadow);
+    border-left: 3px solid var(--green);
+  }
+  .card.red { border-left-color: var(--red); }
+  .card.gold { border-left-color: var(--gold); }
+  .card .title {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .card .desc {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.45;
+  }
+  .price {
+    display: inline-block;
+    background: var(--green);
+    color: white;
+    padding: 1px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .tag {
+    display: inline-block;
+    background: var(--gold);
+    color: white;
+    padding: 1px 8px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .card a {
+    color: var(--green);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .card a:active { text-decoration: underline; }
+
+  /* Image strip - horizontal scroll on mobile */
+  .img-strip {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 0 -14px 10px;
+    padding: 0 14px;
+  }
+  .img-strip::-webkit-scrollbar { display: none; }
+  .img-strip img {
+    flex-shrink: 0;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: zoom-in;
+  }
+  .img-strip img:only-child {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+  }
+
+  /* Drive box */
+  .drive {
+    background: linear-gradient(135deg, var(--green), #00845a);
+    color: white;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+  }
+  .drive h3 {
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .drive .stats {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 8px;
+  }
+  .drive .stats span {
+    font-size: 11px;
+    opacity: 0.85;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .drive .stats span strong {
+    font-size: 22px;
+    font-family: 'Libre Baskerville', serif;
+    display: block;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .drive .note {
+    font-size: 12px;
+    opacity: 0.95;
+  }
+  .drive a {
+    color: white;
+    text-decoration: underline;
+    font-size: 12px;
+    opacity: 0.9;
+  }
+
+  /* Schedule */
+  .schedule {
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: var(--shadow);
+  }
+  .schedule .row {
+    display: flex;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0eae0;
+    font-size: 13px;
+  }
+  .schedule .row:last-child { border-bottom: 0; }
+  .schedule .time {
+    font-weight: 700;
+    color: var(--green);
+    width: 60px;
+    flex-shrink: 0;
+  }
+
+  /* Alert */
+  .alert {
+    background: #FFF3E0;
+    border-left: 3px solid #FF9800;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    font-size: 13px;
+  }
+  .alert.red { background: #FFEBEE; border-left-color: var(--red); }
+  .alert.green { background: #E8F5E9; border-left-color: var(--green); }
+  .alert strong { display: block; margin-bottom: 2px; }
+
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+  }
+  .modal.active { display: flex; }
+  .modal img {
+    max-width: 96vw;
+    max-height: 96vh;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+
+  /* Title hero */
+  .title-hero {
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    text-align: center;
+    position: relative;
+  }
+  .title-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+  }
+  .title-hero > * { position: relative; z-index: 1; }
+  .title-hero h1 {
+    font-size: 36px;
+    color: white;
+    margin: 8px 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  }
+  .title-hero p {
+    color: rgba(255,255,255,0.95);
+    font-size: 13px;
+    margin: 4px 0;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  }
+  .title-hero .flag { font-size: 48px; }
+  .title-hero .route {
+    font-size: 12px;
+    margin-top: 20px;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<!-- Sticky Day Nav -->
+<nav class="nav">
+  <div class="nav-scroll">
+    <a href="#top">Home</a>
+    <a href="#day1">D1 · Stresa</a>
+    <a href="#day2">D2 · Como</a>
+    <a href="#day3">D3 · Garda</a>
+    <a href="#day4">D4 · Forra</a>
+    <a href="#day5">D5 · Brenta</a>
+    <a href="#day6">D6 · Braies</a>
+    <a href="#day7">D7 · Venice</a>
+    <a href="#day8">D8 · Milan</a>
+  </div>
+  <div class="tricolore"></div>
+</nav>
+
+<!-- Title -->
+<section id="top" class="title-hero" style="background-image: url('img/hero-maggiore.jpg');">
+  <p class="flag">🇮🇹</p>
+  <h1>Italy Road Trip</h1>
+  <p>May 31 – Jun 7, 2026 · ~960 km · 8 days</p>
+  <div class="route">
+    Milan → Maggiore → Como → Garda<br>
+    → Trentino → Dolomites → Venice → Milan
+  </div>
+</section>
+
+<!-- Book Ahead -->
+<section class="section" id="book-ahead">
+  <h3>⚠️ Book Ahead</h3>
+  <div class="alert red">
+    <strong>🏝 Isola del Garda (Day 3, Tue)</strong>
+    <a href="https://www.isoladelgarda.com/en/guided-tours" target="_blank">isoladelgarda.com</a> · 39–49 EUR/pp · Closed Mondays
+  </div>
+  <div class="alert">
+    <strong>🅿️ Venice Parking (Day 7)</strong>
+    <a href="https://parclick.it/parcheggio-venezia" target="_blank">parclick.it</a> · 5–15 EUR/day Mestre + train
+  </div>
+  <div class="alert">
+    <strong>⛴ Borromean Islands (Day 1)</strong>
+    <a href="https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-maggiore/" target="_blank">navigazionelaghi.it</a> · Every 30 min · No pre-book
+  </div>
+  <div class="alert green">
+    <strong>✅ Pragser Wildsee</strong>
+    End of May = road OPEN. No reservation needed.
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- DAY 1 -->
+<!-- ============================================ -->
+<section class="day" id="day1">
+  <div class="day-hero" style="background-image: url('img/hero-maggiore.jpg');">
+    <span class="day-badge">DAY 1 · SUN MAY 31</span>
+    <h2>Lake Maggiore</h2>
+    <div class="sub">Stresa & Borromean Islands</div>
+    <div class="day-stats">
+      <span><strong>1h</strong>driving</span>
+      <span><strong>60 km</strong>MXP → Stresa</span>
+      <span><strong>~5h</strong>free roam</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>🚗 Drive</h3>
+    <div class="drive">
+      <h3>MXP Airport → Stresa</h3>
+      <div class="stats">
+        <span><strong>60</strong>km</span>
+        <span><strong>1h</strong>drive</span>
+        <span><strong>12:30</strong>depart</span>
+      </div>
+      <div class="note">🛣 Autostrada to Arona, then <strong>SS33 lake shore</strong> for last 20 km. First lake views!</div>
+      <a href="https://www.google.com/maps/dir/Milan+Malpensa+Airport/Stresa" target="_blank">Open in Google Maps →</a>
+    </div>
+    <div class="img-strip">
+      <img src="img/ss33-road-1.jpg" alt="SS33 road">
+      <img src="img/ss33-road-2.jpg" alt="SS33 lake views">
+    </div>
+
+    <h3>🗓 Schedule — Pick A or B</h3>
+    <div class="ab-toggle" data-day="1">
+      <button class="active" data-plan="A">Plan A<span class="label">Lunch is the experience</span></button>
+      <button data-plan="B">Plan B<span class="label">Dinner is the meal</span></button>
+    </div>
+
+    <div class="plan active" data-day="1" data-plan="A">
+      <div class="schedule">
+        <div class="row"><div class="time">11:00</div><div>Land MXP</div></div>
+        <div class="row"><div class="time">12:15</div><div>Wheels rolling (rental pickup)</div></div>
+        <div class="row"><div class="time">13:15</div><div>Park Stresa, walk to ferry dock</div></div>
+        <div class="row"><div class="time">13:30</div><div>⛴ Ferry → Isola dei Pescatori (10 min)</div></div>
+        <div class="row"><div class="time">13:45</div><div>🍝 <strong>Seated lunch</strong> Verbano or Imbarcadero, lake terrace (90 min)</div></div>
+        <div class="row"><div class="time">15:15</div><div>Wander Pescatori (tiny, 30 min)</div></div>
+        <div class="row"><div class="time">15:45</div><div>⛴ Ferry → Isola Bella</div></div>
+        <div class="row"><div class="time">16:00</div><div>🏛 Isola Bella palace + gardens (1.5h)</div></div>
+        <div class="row"><div class="time">17:30</div><div>⛴ Ferry back to Stresa</div></div>
+        <div class="row"><div class="time">18:00</div><div>🛏 Hotel check-in, shower</div></div>
+        <div class="row"><div class="time">19:30</div><div>🍹 Aperitivo lakefront</div></div>
+        <div class="row"><div class="time">20:30</div><div>🥗 Light dinner (or skip — you ate big at lunch)</div></div>
+      </div>
+      <div class="plan-tradeoff"><strong>Trade-off:</strong> Lunch is *the meal* — slower pace, taste the place. Lighter dinner. More "Italian".</div>
+    </div>
+
+    <div class="plan" data-day="1" data-plan="B">
+      <div class="schedule">
+        <div class="row"><div class="time">11:00</div><div>Land MXP</div></div>
+        <div class="row"><div class="time">12:15</div><div>Wheels rolling</div></div>
+        <div class="row"><div class="time">13:15</div><div>Park Stresa, walk to ferry dock</div></div>
+        <div class="row"><div class="time">13:30</div><div>🥪 Quick panino + spritz lakefront (45 min)</div></div>
+        <div class="row"><div class="time">14:30</div><div>⛴ Ferry → Isola Bella</div></div>
+        <div class="row"><div class="time">14:45</div><div>🏛 Isola Bella palace + gardens (1.5h)</div></div>
+        <div class="row"><div class="time">16:15</div><div>⛴ Ferry → Pescatori</div></div>
+        <div class="row"><div class="time">16:30</div><div>Wander Pescatori, gelato</div></div>
+        <div class="row"><div class="time">17:30</div><div>⛴ Ferry back to Stresa</div></div>
+        <div class="row"><div class="time">18:00</div><div>🛏 Hotel check-in, shower</div></div>
+        <div class="row"><div class="time">19:30</div><div>🍹 Aperitivo lakefront</div></div>
+        <div class="row"><div class="time">20:30</div><div>🍷 <strong>Proper dinner</strong> in Stresa, full menu</div></div>
+      </div>
+      <div class="plan-tradeoff"><strong>Trade-off:</strong> Both islands done properly, real dinner. More "vacation".</div>
+    </div>
+
+    <h3>🏝 Borromean Islands</h3>
+    <div class="card">
+      <div class="img-strip"><img src="img/isola-bella.jpg" alt="Isola Bella"></div>
+      <div class="title">Isola Bella <span class="tag">SHOWSTOPPER</span></div>
+      <div class="desc">Baroque palace + terraced gardens. ~1.5h visit. <a href="https://www.google.com/maps/place/Isola+Bella" target="_blank">Maps →</a></div>
+    </div>
+    <div class="card">
+      <div class="img-strip"><img src="img/isola-pescatori.jpg" alt="Isola Pescatori"></div>
+      <div class="title">Isola dei Pescatori</div>
+      <div class="desc">Tiny fishing village. Eat lunch here — whole island is restaurants. <a href="https://www.google.com/maps/place/Isola+dei+Pescatori" target="_blank">Maps →</a></div>
+    </div>
+
+    <h3>🍝 Where to Eat</h3>
+    <div class="card">
+      <div class="img-strip">
+        <img src="img/rampolina-terrace.jpg" alt="La Rampolina terrace">
+        <img src="img/rampolina-food1.jpg" alt="Rampolina food">
+        <img src="img/rampolina-food2.jpg" alt="Rampolina food 2">
+      </div>
+      <div class="title">🍷 La Rampolina <span class="price">~25–35 EUR/pp</span> <span class="tag">TOP PICK</span></div>
+      <div class="desc">Terrace overlooking lake + Borromean Islands. Locals' favorite. Piemontese + lake fish. <a href="https://www.google.com/maps/search/La+Rampolina+Stresa" target="_blank">Maps →</a></div>
+    </div>
+    <div class="card">
+      <div class="img-strip"><img src="img/lo-stornello-interior.jpg" alt="Lo Stornello"></div>
+      <div class="title">🍝 Trattoria Lo Stornello <span class="price">~20–30 EUR/pp</span></div>
+      <div class="desc">Simple family spot, centro storico. Order: pesce persico, risotto, stufato. <a href="https://www.google.com/maps/search/Trattoria+Lo+Stornello+Stresa" target="_blank">Maps →</a></div>
+    </div>
+    <div class="card">
+      <div class="img-strip">
+        <img src="img/osteria-amici-1.jpg" alt="Osteria Amici">
+        <img src="img/osteria-amici-2.jpg" alt="Osteria Amici 2">
+      </div>
+      <div class="title">🍷 Osteria degli Amici <span class="price">~20–30 EUR/pp</span></div>
+      <div class="desc">Homey, daily menu. Zuppe, spezzatini, paste fresche. <a href="https://www.google.com/maps/search/Osteria+degli+Amici+Stresa" target="_blank">Maps →</a></div>
+    </div>
+
+    <h3>🍦 Gelato</h3>
+    <div class="card">
+      <div class="img-strip">
+        <img src="img/angolo-gelato-1.jpg" alt="Angolo del Gelato">
+        <img src="img/angolo-gelato-2.jpg" alt="Angolo del Gelato 2">
+        <img src="img/angolo-gelato-3.jpg" alt="Angolo del Gelato 3">
+      </div>
+      <div class="title">🍦 L'Angolo del Gelato <span class="price">~3–5 EUR</span></div>
+      <div class="desc">Centro Stresa. Try caramello salato. <a href="https://www.google.com/maps/search/Angolo+del+Gelato+Stresa" target="_blank">Maps →</a></div>
+    </div>
+
+    <h3>🛏 Where to Sleep</h3>
+    <div class="card">
+      <div class="img-strip">
+        <img src="img/dafne-1.jpg" alt="Dafne">
+        <img src="img/dafne-2.jpg" alt="Dafne 2">
+      </div>
+      <div class="title">🌾 Agriturismo Nel Giardino di Dafne <span class="price">~100–130 EUR</span></div>
+      <div class="desc">Breakfast basket at 8am: local milk, yogurt, fresh pastries. Quiet garden. <a href="https://www.google.com/maps/search/Agriturismo+Giardino+Dafne+Stresa" target="_blank">Maps →</a></div>
+    </div>
+    <div class="card">
+      <div class="img-strip">
+        <img src="img/la-palma-1.jpg" alt="La Palma">
+        <img src="img/la-palma-2.jpg" alt="La Palma 2">
+      </div>
+      <div class="title">🏨 Hotel La Palma <span class="price">~120–150 EUR</span></div>
+      <div class="desc">4-star on lungolago. Rooftop terrace sunset panorama. <a href="https://www.google.com/maps/search/Hotel+La+Palma+Stresa" target="_blank">Maps →</a></div>
+    </div>
+
+    <h3>🌙 Evening · 🏖 Swim · ☂ Rain</h3>
+    <div class="card">
+      <div class="desc">
+        <strong>🌙</strong> Stresa quiet at night. Lungolago passeggiata. Aperitivo on hotel terrace, sunset over islands.<br><br>
+        <strong>🏖</strong> Spiaggia Lido di Stresa — pebbly beach in town. Water ~18–19°C end of May.<br><br>
+        <strong>☂</strong> Isola Bella palace is indoor. Or drive to <a href="https://www.google.com/maps/place/Rocca+di+Angera" target="_blank">Borromeo Castle in Angera</a> (30 min).
+      </div>
+    </div>
+    <div class="card" style="border-left-color: var(--red);">
+      <div class="img-strip">
+        <img src="img/angera-castle-1.jpg" alt="Angera">
+        <img src="img/angera-castle-2.jpg" alt="Angera 2">
+      </div>
+      <div class="title">☂ Rocca di Angera (rain backup)</div>
+      <div class="desc">Medieval castle, doll museum, lake views from tower. 30 min from Stresa.</div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+  <img id="modalImg" src="" alt="">
+</div>
+
+<script>
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modalImg');
+  document.addEventListener('click', (e) => {
+    const img = e.target.closest('.img-strip img, .day-hero, .title-hero');
+    if (img && img.tagName === 'IMG') {
+      e.stopPropagation();
+      modalImg.src = img.src;
+      modal.classList.add('active');
+    }
+  });
+  modal.addEventListener('click', () => {
+    modal.classList.remove('active');
+    modalImg.src = '';
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      modal.classList.remove('active');
+    }
+  });
+
+  // A/B toggle
+  document.querySelectorAll('.ab-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      const btn = e.target.closest('button');
+      if (!btn) return;
+      const day = toggle.dataset.day;
+      const plan = btn.dataset.plan;
+      toggle.querySelectorAll('button').forEach(b => b.classList.toggle('active', b === btn));
+      document.querySelectorAll(`.plan[data-day="${day}"]`).forEach(p => {
+        p.classList.toggle('active', p.dataset.plan === plan);
+      });
+    });
+  });
+</script>
+</body>
+</html>
