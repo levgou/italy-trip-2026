@@ -107,7 +107,24 @@ HANDOFF.md is the **single source of truth** for cross-device handoffs. Update b
 
 (Append updates here when migrating. Latest at top.)
 
-- 2026-05-14: Initial handoff doc created. State at this point: 5 commits on main, 81 img files, Pages deployed, all Days 1-8 slides built with hero images + sleep images.
+- **2026-05-14 session 2 (autonomous run):**
+  - Created `guide.html` — mobile-first scroll page, deployed at https://levgou.github.io/italy-trip-2026/guide.html. Same Italian theme as slides. Sticky nav, click-to-expand image modal.
+  - Built **A/B plans** for **all 8 days** in mobile guide:
+    - D1: Lunch on Pescatori (A) vs Dinner in Stresa (B)
+    - D2: Do it all quick lunch (A) vs Long lunch skip Brunate (B)
+    - D3: **Monte Baldo wow afternoon (A) vs Sirmione + thermal swim (B)** — Isola del Garda DROPPED entirely (too touristy, doesn't fit vibe)
+    - D4: Cliff terrace lunch + short Ponale (A) vs Quick lunch + medium Ponale hike (B)
+    - D5: Big hike Rifugio Croz (A) vs Pradel chill + lake day (B)
+    - D6: Braies + Val Pusteria villages (A) vs Braies + Tre Cime detour (B)
+    - D7: Direct push to Venice (A) vs Cortina coffee stop (B)
+    - D8: Long Venice morning (A) vs Verona detour (B)
+  - A/B = schedule toggle only. Activities/restaurants/hotels all shown together (badges show plan affinity).
+  - Added image placeholder pattern (`.img-missing`, striped dashed div) for places not yet photographed.
+  - Updated `italy_trip_plan.md` with A/B for all days. Removed Isola del Garda from booking alerts + cost table.
+  - Synced desktop slides (`index.html`) — dropped Isola del Garda, Day 3 → Monte Baldo/Sirmione A/B, added A/B card to Book Ahead slide pointing to mobile guide.
+  - File `ab_plans_days_1-4.md` retained as record of original desktop-Claude A/B draft (Day 3 since superseded).
+
+- 2026-05-14 session 1: Initial handoff doc created. State at this point: 5 commits on main, 81 img files, Pages deployed, all Days 1-8 slides built with hero images + sleep images.
 
 ---
 
