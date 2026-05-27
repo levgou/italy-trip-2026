@@ -586,22 +586,22 @@ OR eat at Ponale Alto Belvedere during the hike
 
 **Trade-off:** Full Venice morning. Rialto market at dawn = magic. Milan = lunch + quick walk only.
 
-### Plan B — Verona detour
+### Plan B — Short Verona coffee stop
 | Time | Activity |
 |------|----------|
 | 07:30 | Quick cornetto + caffè |
 | 08:30 | Get car at Mestre, drive to **Verona** (~1.5h) |
-| 10:00 | Piazza Bra + Arena (40 min) |
-| 10:45 | Via Mazzini → Casa di Giulietta (45 min) |
-| 11:30 | Piazza delle Erbe + Arche Scaligere (45 min) |
-| 12:30 | Lunch in Verona |
-| 14:00 | Verona → Milan (~1.5h) |
-| 15:30 | Quick Duomo + Galleria stop |
-| 16:30 | Gelato at Artico |
-| 17:00 | Drive to MXP |
+| 10:00 | Verona coffee/gelato + Arena exterior. NO real visit (~45 min) |
+| 10:45 | Time check — behind? Leave. Ahead? Quick Piazza delle Erbe peek |
+| 11:15 | Verona → Milan (~1.5h) |
+| 13:00 | Lunch in Milan — last Italian meal |
+| 14:30 | Duomo + Galleria stroll |
+| 15:30 | Gelato at Artico |
+| 16:30 | Drive to MXP (~50 min) |
+| 17:30 | Check in, return car |
 | 20:00 | Flight |
 
-**Trade-off:** Adds Verona (Arena, Romeo + Giulietta, Piazza delle Erbe). Skip slow Venice morning. Three Italian cities in one day = packed.
+**Trade-off:** Verona = coffee/gelato + Arena exterior only, NOT a real visit. Assess by time — if late, skip + push to Milan. Flight non-negotiable. Still keeps relaxed Milan lunch.
 
 ### Where to Eat
 
