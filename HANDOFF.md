@@ -107,6 +107,14 @@ HANDOFF.md is the **single source of truth** for cross-device handoffs. Update b
 
 (Append updates here when migrating. Latest at top.)
 
+- **2026-05-27 session 3:**
+  - Resolved all 5 open questions: Monte Baldo hours (last up 18:00/down 18:45), Tre Cime needs mandatory reservation (pass.auronzo.info, 40 EUR), Day5/6 pairing tip added, Cortina = preference (lean Plan A), Verona = Day 8 Plan B now short coffee/Arena-exterior stop only (time-gated, flight protected).
+  - Considered Carezza (rainbow lake) — SKIPPED (redundant with Braies, wrong side of Dolomites, would nuke Tre Cime).
+  - Fetched + wired ~47 real images into mobile guide.html Days 3-8 (restaurants, bacari, sights, hikes, gelato, Verona, Milan). Fixed `.thumb-row` CSS (was missing → overflow) + wired thumb-row into zoom modal.
+  - Redid low-res images (were Google thumbnails): la-palma, treterre x2, dafne-2, angera-1, econoleggio-1, crotto x3, guidi-gelato-1, faro-voltiano-new-1, brunate-funicular-new-2 — all now 1000-2000px. Auto-convert saves to .jpg to keep refs stable.
+  - **TODO TOMORROW: desktop slides (index.html) Days 4-8 still use text place-cards, NOT image cards.** Mobile guide has all images; slides Days 4-8 need image cards added (~40 imgs already in img/, just need wiring into index.html). Days 1-3 of slides already auto-improved (shared filenames with redone images).
+  - **Still low-res (minor, not yet redone):** econoleggio-2, angera-castle-2, villa-carlotta-2, il-nido-2, le-coccole-1, bb-beatrice-2, gallorosso-maso, della-pesa-1, suso-1, al-remer-1, rifugio-croz-1, sciury-1, angolo-gelato-3, tre-cime-1 (can drop, tre-cime-2 is 2560px). Redo loop: pointer + open Google Images (click image FIRST for full-res), user saves to Downloads, "n", CC grabs newest + sips-converts to .jpg + replaces same filename.
+
 - **2026-05-14 session 2 (autonomous run):**
   - Created `guide.html` — mobile-first scroll page, deployed at https://levgou.github.io/italy-trip-2026/guide.html. Same Italian theme as slides. Sticky nav, click-to-expand image modal.
   - Built **A/B plans** for **all 8 days** in mobile guide:
