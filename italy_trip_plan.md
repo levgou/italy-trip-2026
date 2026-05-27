@@ -170,7 +170,7 @@
 | 19:00 | Drive back toward hotel (~30-50 min) |
 | 20:30 | Dinner near hotel |
 
-**Trade-off:** Skip Grotte di Catullo. Monte Baldo = unique-to-Garda. **Verify last cable car down (~18:00-18:30) at funiviedelbaldo.it.**
+**Trade-off:** Skip Grotte di Catullo. Monte Baldo = unique-to-Garda. Cable car (June 2026): first up 8:15, last up 18:00, last down 18:45 — schedule has buffer.
 
 ### Plan B — Sirmione + thermal swim
 | Time | Activity |
