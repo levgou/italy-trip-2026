@@ -424,7 +424,9 @@ OR eat at Ponale Alto Belvedere during the hike
 | 17:30 | Check in at maso |
 | 19:30 | Dinner at Gasthaus |
 
-**Trade-off:** Tre Cime = iconic Dolomite shot. +2h driving total. Toll road 40 EUR/car. **Verify last departures (~18:00) at drei-zinnen.bz before going.** Distance Braies → Tre Cime is 42 km / 49 min.
+**Trade-off:** Tre Cime = iconic Dolomite shot. +2h driving total. Distance Braies → Tre Cime = 42 km / 49 min.
+
+**⚠️ BOOK AHEAD if choosing Plan B:** Toll road needs MANDATORY online reservation at pass.auronzo.info. 40 EUR/car, ticket valid 12h from chosen entry slot. Road open 24h May-Nov (casello staffed 8:00-20:00). Shuttle line 444 is alt (no car). Early June = fewer crowds.
 
 **Braies lake walk details:**
 - 3.5 km loop, ~1.5h, easy
