@@ -309,6 +309,29 @@
     height: 200px;
   }
 
+  /* thumb-row: same behavior as img-strip (wired-in images) */
+  .thumb-row {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 0 0 10px;
+  }
+  .thumb-row::-webkit-scrollbar { display: none; }
+  .thumb-row img {
+    flex-shrink: 0;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: zoom-in;
+  }
+  .thumb-row img:only-child {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+  }
+
   /* Drive box */
   .drive {
     background: linear-gradient(135deg, var(--green), #00845a);
@@ -1673,7 +1696,7 @@
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modalImg');
   document.addEventListener('click', (e) => {
-    const img = e.target.closest('.img-strip img, .day-hero, .title-hero');
+    const img = e.target.closest('.img-strip img, .thumb-row img, .day-hero, .title-hero');
     if (img && img.tagName === 'IMG') {
       e.stopPropagation();
       modalImg.src = img.src;
